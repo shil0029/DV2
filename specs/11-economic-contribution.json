@@ -126,7 +126,7 @@
         "zero": true
       },
       "axis": {
-        "title": "GDP contribution (A$ million, 2018–19)",
+        "title": "Contribution (A$m)",
         "format": ",.0f",
         "tickCount": 4
       }

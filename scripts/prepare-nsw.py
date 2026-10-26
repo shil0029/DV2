@@ -119,7 +119,7 @@ out = {
         'Twenty monitored species or species groups, not all NSW catches.',
         'NSW data are a case study; they do not represent all Australian recreational fishing.',
         'Estimates have sampling uncertainty; changes in point estimates are not tests of statistical significance.',
-        'Kept, released and total estimates are independently rounded. The source has differences of up to three organisms.',
+        'Kept, released and total estimates are independently rounded. The source has differences of up to one organism.',
         'Heatmap release shares use released / published total. Sankey widths use kept + released so the diagram conserves its displayed flows.',
         'Sand Flathead and Leatherjacket are source species groupings. Bream also groups multiple species.',
         'European Carp is absent from the 20-species time-comparison table and has not been added from another table.'

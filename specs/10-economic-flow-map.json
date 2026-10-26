@@ -1401,6 +1401,7 @@
           },
           "legend": {
             "title": "FTE jobs supported",
+            "symbolType": "stroke",
             "orient": "bottom",
             "values": [
               100,

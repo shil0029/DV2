@@ -12,6 +12,7 @@
   const sizeFor = element => Math.max(260, Math.floor(element.getBoundingClientRect().width));
   async function render(element) {
     const name = element.dataset.spec;
+    const accessibleDescription = element.getAttribute('aria-label');
     element.innerHTML = '<span class="chart-loading">Drawing the data…</span>';
     try {
       const spec = await fetchJSON(`specs/${name}.json`);
@@ -19,6 +20,8 @@
       // Keep the labelled Sankey readable on narrow screens without horizontal scrolling.
       if (name === '09-catch-sankey' && spec.width < 450) spec.height = 470;
       const result = await vegaEmbed(element, spec, { actions: false, renderer: 'svg', tooltip: { theme: 'custom' } });
+      // Vega-Embed supplies a generic label; retain the chart-specific description.
+      if (accessibleDescription) element.setAttribute('aria-label', accessibleDescription);
       views.set(name, result.view);
       let previousWidth = spec.width;
       let timer;

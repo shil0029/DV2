@@ -48,7 +48,11 @@ Browser verification covered a 1280px laptop viewport and 390px phone viewport, 
 
 ## GitHub Pages
 
-The site is ready for branch-based hosting. After pushing `main`, use the repository's **Settings → Pages → Build and deployment** to choose **Deploy from a branch**, **main**, and **/(root)**. Save and wait for GitHub's Pages deployment to finish. The expected site address is `https://shil0029.github.io/DV2/`; this is not a claim that deployment has already succeeded.
+Live visualisation: [Gone fishing](https://shil0029.github.io/DV2/).
+
+GitHub Pages publishes from **main → /(root)** using **Deploy from a branch**. Future pushes to `main` trigger an updated deployment; progress appears in the repository's Actions tab.
+
+The published site was verified on 26 October 2026: all 11 charts rendered, both selectors updated their charts and supporting text, and the browser reported no errors or warnings.
 
 Reference: [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 

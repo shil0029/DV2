@@ -1,0 +1,401 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 600,
+  "height": 380,
+  "padding": 0,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": null,
+  "data": [
+    {
+      "name": "tree",
+      "values": [
+        {
+          "id": "root",
+          "parent": null,
+          "total": 0
+        },
+        {
+          "species": "Bream",
+          "year": "2023/24",
+          "total": 1265260,
+          "kept": 303727,
+          "released": 961533,
+          "release_share": 0.7599489433001912,
+          "id": "Bream",
+          "parent": "root",
+          "colour": "#147a80"
+        },
+        {
+          "species": "Dusky Flathead",
+          "year": "2023/24",
+          "total": 892908,
+          "kept": 331309,
+          "released": 561599,
+          "release_share": 0.6289550547200832,
+          "id": "Dusky Flathead",
+          "parent": "root",
+          "colour": "#4c7097"
+        },
+        {
+          "species": "Snapper",
+          "year": "2023/24",
+          "total": 517486,
+          "kept": 166486,
+          "released": 351000,
+          "release_share": 0.6782792191479576,
+          "id": "Snapper",
+          "parent": "root",
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Murray Cod",
+          "year": "2023/24",
+          "total": 325457,
+          "kept": 45825,
+          "released": 279632,
+          "release_share": 0.8591979892889076,
+          "id": "Murray Cod",
+          "parent": "root",
+          "colour": "#c99c42"
+        },
+        {
+          "species": "Tailor",
+          "year": "2023/24",
+          "total": 320226,
+          "kept": 141137,
+          "released": 179088,
+          "release_share": 0.5592550261377902,
+          "id": "Tailor",
+          "parent": "root",
+          "colour": "#4a9092"
+        },
+        {
+          "species": "Sand Whiting",
+          "year": "2023/24",
+          "total": 297480,
+          "kept": 114064,
+          "released": 183417,
+          "release_share": 0.6165691811214199,
+          "id": "Sand Whiting",
+          "parent": "root",
+          "colour": "#71866c"
+        },
+        {
+          "species": "Sand Flathead",
+          "year": "2023/24",
+          "total": 270304,
+          "kept": 133610,
+          "released": 136694,
+          "release_share": 0.5057046880549307,
+          "id": "Sand Flathead",
+          "parent": "root",
+          "colour": "#8e7887"
+        },
+        {
+          "species": "Luderick",
+          "year": "2023/24",
+          "total": 218770,
+          "kept": 141596,
+          "released": 77173,
+          "release_share": 0.35275860492754946,
+          "id": "Luderick",
+          "parent": "root",
+          "colour": "#91a7b4"
+        },
+        {
+          "species": "Yellowtail Kingfish",
+          "year": "2023/24",
+          "total": 131485,
+          "kept": 47705,
+          "released": 83780,
+          "release_share": 0.6371829486253184,
+          "id": "Yellowtail Kingfish",
+          "parent": "root",
+          "colour": "#147a80"
+        },
+        {
+          "species": "Rainbow Trout",
+          "year": "2023/24",
+          "total": 130493,
+          "kept": 23773,
+          "released": 106720,
+          "release_share": 0.8178216456055114,
+          "id": "Rainbow Trout",
+          "parent": "root",
+          "colour": "#4c7097"
+        },
+        {
+          "species": "Australian Bass",
+          "year": "2023/24",
+          "total": 128779,
+          "kept": 8480,
+          "released": 120299,
+          "release_share": 0.9341507543931852,
+          "id": "Australian Bass",
+          "parent": "root",
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Yabbies",
+          "year": "2023/24",
+          "total": 126011,
+          "kept": 104290,
+          "released": 21721,
+          "release_share": 0.17237384037901454,
+          "id": "Yabbies",
+          "parent": "root",
+          "colour": "#c99c42"
+        },
+        {
+          "species": "Blue Swimmer Crab",
+          "year": "2023/24",
+          "total": 117936,
+          "kept": 92833,
+          "released": 25103,
+          "release_share": 0.21285273368606702,
+          "id": "Blue Swimmer Crab",
+          "parent": "root",
+          "colour": "#4a9092"
+        },
+        {
+          "species": "Brown Trout",
+          "year": "2023/24",
+          "total": 117051,
+          "kept": 26741,
+          "released": 90310,
+          "release_share": 0.7715440278169345,
+          "id": "Brown Trout",
+          "parent": "root",
+          "colour": "#71866c"
+        },
+        {
+          "species": "Golden Perch",
+          "year": "2023/24",
+          "total": 109694,
+          "kept": 38759,
+          "released": 70935,
+          "release_share": 0.6466625339581016,
+          "id": "Golden Perch",
+          "parent": "root",
+          "colour": "#8e7887"
+        },
+        {
+          "species": "Australian Salmon",
+          "year": "2023/24",
+          "total": 103452,
+          "kept": 41455,
+          "released": 61997,
+          "release_share": 0.5992827591540038,
+          "id": "Australian Salmon",
+          "parent": "root",
+          "colour": "#91a7b4"
+        },
+        {
+          "species": "Mulloway",
+          "year": "2023/24",
+          "total": 75168,
+          "kept": 18132,
+          "released": 57036,
+          "release_share": 0.7587803320561941,
+          "id": "Mulloway",
+          "parent": "root",
+          "colour": "#147a80"
+        },
+        {
+          "species": "Leatherjacket",
+          "year": "2023/24",
+          "total": 70730,
+          "kept": 50318,
+          "released": 20413,
+          "release_share": 0.2886045525236816,
+          "id": "Leatherjacket",
+          "parent": "root",
+          "colour": "#4c7097"
+        },
+        {
+          "species": "Silver Trevally",
+          "year": "2023/24",
+          "total": 70537,
+          "kept": 25465,
+          "released": 45072,
+          "release_share": 0.6389837957384068,
+          "id": "Silver Trevally",
+          "parent": "root",
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Grey Morwong",
+          "year": "2023/24",
+          "total": 11857,
+          "kept": 7478,
+          "released": 4379,
+          "release_share": 0.3693177026229232,
+          "id": "Grey Morwong",
+          "parent": "root",
+          "colour": "#c99c42"
+        }
+      ],
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "total",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "round": true,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ],
+          "paddingInner": 3
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.depth === 1"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "field": "colour"
+          },
+          "stroke": {
+            "value": "#faf9f2"
+          },
+          "strokeWidth": {
+            "value": 1
+          }
+        },
+        "update": {
+          "tooltip": {
+            "signal": "{Species:datum.species, 'Estimated catches':format(datum.total, ','), 'Year':'2023/24'}"
+          }
+        },
+        "hover": {
+          "opacity": {
+            "value": 0.75
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "(datum.x0+datum.x1)/2"
+          },
+          "y": {
+            "signal": "(datum.y0+datum.y1)/2-7"
+          },
+          "text": {
+            "field": "species"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "DM Sans"
+          },
+          "fontWeight": {
+            "value": 600
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#fffef7"
+          },
+          "limit": {
+            "signal": "datum.x1-datum.x0-12"
+          },
+          "opacity": {
+            "signal": "datum.x1-datum.x0>70 && datum.y1-datum.y0>35 ? 1 : 0"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "(datum.x0+datum.x1)/2"
+          },
+          "y": {
+            "signal": "(datum.y0+datum.y1)/2+12"
+          },
+          "text": {
+            "signal": "format(datum.total/1000, '.0f')+'k'"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "DM Sans"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#fffef7"
+          },
+          "opacity": {
+            "signal": "datum.x1-datum.x0>70 && datum.y1-datum.y0>45 ? 1 : 0"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 340,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "padding": {
+    "left": 55,
+    "right": 95,
+    "top": 25,
+    "bottom": 35
+  },
+  "data": {
+    "values": [
+      {
+        "age_group": "18–29",
+        "year": 2018,
+        "participation_percent": 22.3,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "18–29",
+        "year": 2020,
+        "participation_percent": 24.8,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "30–44",
+        "year": 2018,
+        "participation_percent": 26.6,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "30–44",
+        "year": 2020,
+        "participation_percent": 20.6,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "45–64",
+        "year": 2018,
+        "participation_percent": 20.1,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "45–64",
+        "year": 2020,
+        "participation_percent": 18,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "65+",
+        "year": 2018,
+        "participation_percent": 15.5,
+        "source_ref": "age-gender-participation"
+      },
+      {
+        "age_group": "65+",
+        "year": 2020,
+        "participation_percent": 15.1,
+        "source_ref": "age-gender-participation"
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "labelFontWeight": 700
+      }
+    },
+    "y": {
+      "field": "participation_percent",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          12,
+          29
+        ]
+      },
+      "axis": {
+        "title": "Adults who fished (%)",
+        "values": [
+          15,
+          20,
+          25
+        ]
+      }
+    },
+    "color": {
+      "field": "age_group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "18–29",
+          "30–44",
+          "45–64",
+          "65+"
+        ],
+        "range": [
+          "#147a80",
+          "#c86a45",
+          "#4c7097",
+          "#c99c42"
+        ]
+      },
+      "legend": null
+    },
+    "detail": {
+      "field": "age_group"
+    },
+    "tooltip": [
+      {
+        "field": "age_group",
+        "title": "Age group"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "participation_percent",
+        "title": "Participation (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2018"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "participation_percent",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2020"
+        },
+        {
+          "calculate": "datum.age_group + ' · ' + format(datum.participation_percent, '.1f') + '%'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 12,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

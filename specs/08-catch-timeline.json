@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 340,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "species",
+      "value": "Snapper"
+    }
+  ],
+  "data": {
+    "url": "data/nsw.json",
+    "format": {
+      "type": "json",
+      "property": "catch"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.species === species"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "color": "#147a80",
+    "strokeWidth": 3,
+    "point": {
+      "filled": true,
+      "size": 75,
+      "color": "#147a80"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": [
+        "2017/18",
+        "2019/20",
+        "2021/22",
+        "2023/24"
+      ],
+      "axis": {
+        "title": null,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "title": "Estimated individual catches",
+        "format": ".2s",
+        "tickCount": 5
+      }
+    },
+    "tooltip": [
+      {
+        "field": "species",
+        "title": "Species / group"
+      },
+      {
+        "field": "year",
+        "title": "Survey"
+      },
+      {
+        "field": "total",
+        "title": "Estimated catch",
+        "format": ",.0f"
+      },
+      {
+        "field": "kept",
+        "title": "Kept",
+        "format": ",.0f"
+      },
+      {
+        "field": "released",
+        "title": "Released",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

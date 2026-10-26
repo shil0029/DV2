@@ -1,0 +1,442 @@
+{
+  "source": {
+    "title": "National Social and Economic Survey of Recreational Fishers 2018–2021",
+    "authors": "Moore, A.; Schirmer, J.; Magnusson, A.; Keller, K.; Hinten, G.; Galeano, D.; Woodhams, J.; Wright, D.; Maloney, L.; Dix, A.",
+    "publisher": "FRDC, ABARES and University of Canberra",
+    "publication_date": "2023-02",
+    "landing_url": "https://www.frdc.com.au/about-recreational-fishing/nrfs",
+    "pdf_url": "https://www.frdc.com.au/sites/default/files/products/2018-161-NRFS_main%20report_FINAL_19Feb2023.pdf",
+    "inspected_copy_url": "https://www.regionalwellbeing.org.au/wp-content/uploads/2023/02/2018-161-NRFS_main-report_FINAL.pdf",
+    "licence": "Creative Commons Attribution 3.0 Australia (except third-party content, logos and Commonwealth Coat of Arms)",
+    "retrieved_date": "2026-10-26"
+  },
+  "references": [
+    {
+      "id": "national-participation",
+      "pdf_page": 52,
+      "printed_page": 38,
+      "figure": "Figure 4.2",
+      "extraction": "Transcribed printed numerical labels after rendering page; no values estimated from bar heights.",
+      "definition": "Percentage of Australian adults aged 18+ who went recreational fishing at least once in the preceding 12 months. Weighted Regional Wellbeing Survey estimates.",
+      "notes": [
+        "2018 and 2020 are survey reference years, not 2023 publication year.",
+        "The 2020 estimate is 20.0%, with a reported 95% confidence range 19.2–20.9%.",
+        "2018 headline 21.4% is rounded; Table 4.2 separately reports 21.37%."
+      ]
+    },
+    {
+      "id": "state-participation",
+      "pdf_page": 53,
+      "printed_page": 39,
+      "figure": "Figure 4.4",
+      "extraction": "Transcribed exact one-decimal numeric labels after rendering.",
+      "definition": "Percentage of adults aged 18+ in each residence jurisdiction who fished in preceding 12 months.",
+      "notes": [
+        "NSW and ACT are one combined survey group. Do not split their rate or counts.",
+        "Rates for 2018 are one-decimal labels in Figure 4.4; Table 4.2 contains two-decimal 2018 rates.",
+        "Report states no statistically significant change within any state or territory from 2018 to 2020; avoid claiming that every numerical change is a proven trend.",
+        "2020 is the latest comparable national wave in this report; later state surveys have different scopes."
+      ]
+    },
+    {
+      "id": "state-fishers-2018",
+      "pdf_page": 54,
+      "printed_page": 40,
+      "table": "Table 4.2",
+      "extraction": "Transcribed table values.",
+      "definition": "Estimated adults who fished at least once in 2018, scaled using revised June 2019 adult population estimates. Fisher counts rounded to nearest 100.",
+      "notes": [
+        "Counts are 2018 estimates, not 2020 counts.",
+        "Children under 18 are excluded.",
+        "National 4,218,600 includes 1,900 people in other/no-fixed-address categories. Sum of displayed jurisdiction counts plus other differs by 100 from national total due rounding; do not force reconciliation."
+      ]
+    },
+    {
+      "id": "age-gender-participation",
+      "pdf_page": 58,
+      "printed_page": 44,
+      "figure": "Figure 4.2 as printed; referred to as Figure 4.8 in surrounding prose",
+      "extraction": "Transcribed printed numeric labels after rendering;2018 values also confirmed in prose on printedp 43.",
+      "definition": "Percentage within each adult age or gender category who fished in the preceding 12 months.",
+      "notes": [
+        "Gender categories are reproduced as reported; no claim that survey categories describe all identities.",
+        "The 30–44 age group fell from 26.6% to 20.6%. Report describes 18–29 increase and 45–64 decrease as not statistically significant.",
+        "Observed differences do not establish thatCOVID-19 caused the changes."
+      ]
+    },
+    {
+      "id": "activity-comparison",
+      "pdf_page": 57,
+      "printed_page": 43,
+      "figure": "Figure 4.1 as printed; referred to as Figure 4.7 in surrounding prose",
+      "extraction": "Transcribed printed numeric labels after rendering.",
+      "definition": "Estimated share of adults undertaking each activity once or more in a typical 2–3-year period, based on 2018 survey.",
+      "notes": [
+        "This is NOT annual participation.",
+        "The report reinterprets answers as a typical 2–3-year period after participant follow-up; see printedp 42 footnote 7.",
+        "Multiple activities can be selected, so percentages must not be added.",
+        "Use chart subtitle to distinguish fishing 30.8% here from annual 20.0% in 2020."
+      ]
+    },
+    {
+      "id": "employment-flows",
+      "pdf_page": 144,
+      "printed_page": 130,
+      "table": "Table 7.8",
+      "extraction": "Transcribed table matrix after text extraction and visual verification; summed urban and regional origin/destination cells into state pairs; retained only interstate pairs.",
+      "definition": "Estimated full-time-equivalent employment supported across all industries by recreational-fishing-related expenditure of residents of origin regions, occurring in destination economies. Includes direct and flow-on effects in 2018–19.",
+      "notes": [
+        "Arrows must be labelled economic contributions, NOT people moving, fishing trips, catches, or direct spending.",
+        "Includes interregional business supply-chain and household spending effects.",
+        "Includes ACT as a separate economic region even though participation combines NSW/ACT.",
+        "Within-state flows are excluded.",
+        "Source Sydney→Sydney cell literally reads 9 Ti 649, so it is stored asnull in the transcription. It does not enter any interstate aggregate. No value was inferred.",
+        "Published matrix values are rounded to whole FTE; aggregated totals inherit rounding.",
+        "A map can use an origin-state selector to avoid overlapping bilateral lines."
+      ]
+    },
+    {
+      "id": "spending-contribution",
+      "pdf_page": 144,
+      "printed_page": 130,
+      "table": "Table 7.9",
+      "extraction": "Transcribed table values.",
+      "definition": "Modelled economic contribution by expenditure category,2018–19. GDP figures areAUDmillions; employment is full-time-equivalent jobs.",
+      "notes": [
+        "GDP contribution is not the amount fishers spent.",
+        "Flow-on comprises production- and consumption-induced effects.",
+        "Figures are source-rounded: direct plus flow-on can differ from reported total by 1 million. Preserve reported totals.",
+        "These are historical 2018–19 dollars, not inflation-adjusted current dollars."
+      ]
+    }
+  ],
+  "employment_matrix_transcription": {
+    "region_order": [
+      {
+        "state": "NSW",
+        "region": "Sydney"
+      },
+      {
+        "state": "NSW",
+        "region": "Regional"
+      },
+      {
+        "state": "VIC",
+        "region": "Melbourne"
+      },
+      {
+        "state": "VIC",
+        "region": "Regional"
+      },
+      {
+        "state": "QLD",
+        "region": "Brisbane"
+      },
+      {
+        "state": "QLD",
+        "region": "Regional"
+      },
+      {
+        "state": "SA",
+        "region": "Adelaide"
+      },
+      {
+        "state": "SA",
+        "region": "Regional"
+      },
+      {
+        "state": "WA",
+        "region": "Perth"
+      },
+      {
+        "state": "WA",
+        "region": "Regional"
+      },
+      {
+        "state": "TAS",
+        "region": "Hobart"
+      },
+      {
+        "state": "TAS",
+        "region": "Regional"
+      },
+      {
+        "state": "NT",
+        "region": "Darwin"
+      },
+      {
+        "state": "NT",
+        "region": "Regional"
+      },
+      {
+        "state": "ACT",
+        "region": "ACT"
+      }
+    ],
+    "rows": [
+      [
+        null,
+        3060,
+        847,
+        303,
+        419,
+        888,
+        155,
+        111,
+        309,
+        100,
+        63,
+        109,
+        59,
+        224,
+        121
+      ],
+      [
+        3107,
+        6536,
+        436,
+        221,
+        199,
+        501,
+        83,
+        53,
+        145,
+        99,
+        30,
+        47,
+        25,
+        81,
+        87
+      ],
+      [
+        1114,
+        791,
+        7120,
+        2088,
+        300,
+        358,
+        169,
+        99,
+        385,
+        163,
+        286,
+        90,
+        29,
+        75,
+        310
+      ],
+      [
+        365,
+        391,
+        1593,
+        2269,
+        89,
+        133,
+        119,
+        180,
+        105,
+        26,
+        12,
+        42,
+        27,
+        14,
+        31
+      ],
+      [
+        797,
+        544,
+        667,
+        219,
+        5663,
+        2756,
+        130,
+        50,
+        244,
+        54,
+        23,
+        38,
+        17,
+        12,
+        47
+      ],
+      [
+        781,
+        672,
+        703,
+        263,
+        1613,
+        8856,
+        130,
+        63,
+        227,
+        123,
+        21,
+        63,
+        25,
+        29,
+        56
+      ],
+      [
+        438,
+        145,
+        422,
+        175,
+        198,
+        170,
+        3284,
+        1709,
+        166,
+        52,
+        16,
+        39,
+        13,
+        15,
+        30
+      ],
+      [
+        149,
+        58,
+        180,
+        92,
+        54,
+        85,
+        847,
+        1621,
+        53,
+        13,
+        4,
+        6,
+        8,
+        8,
+        11
+      ],
+      [
+        628,
+        274,
+        657,
+        167,
+        188,
+        203,
+        174,
+        147,
+        2815,
+        1271,
+        20,
+        38,
+        20,
+        33,
+        64
+      ],
+      [
+        301,
+        153,
+        318,
+        92,
+        90,
+        166,
+        60,
+        29,
+        722,
+        1990,
+        8,
+        20,
+        12,
+        12,
+        23
+      ],
+      [
+        78,
+        53,
+        64,
+        19,
+        24,
+        57,
+        16,
+        8,
+        22,
+        6,
+        491,
+        267,
+        3,
+        2,
+        5
+      ],
+      [
+        83,
+        71,
+        85,
+        24,
+        26,
+        80,
+        17,
+        6,
+        24,
+        11,
+        111,
+        743,
+        4,
+        2,
+        6
+      ],
+      [
+        17,
+        6,
+        20,
+        4,
+        5,
+        5,
+        3,
+        1,
+        9,
+        16,
+        0,
+        0,
+        53,
+        10,
+        2
+      ],
+      [
+        214,
+        147,
+        236,
+        68,
+        66,
+        159,
+        44,
+        21,
+        73,
+        32,
+        5,
+        12,
+        160,
+        1509,
+        22
+      ],
+      [
+        705,
+        1164,
+        247,
+        138,
+        91,
+        160,
+        67,
+        35,
+        88,
+        38,
+        30,
+        35,
+        17,
+        25,
+        687
+      ]
+    ],
+    "missing_cell": "Sydney to Sydney is corrupt in the source; null retained and only interstate aggregations used."
+  },
+  "checks": {
+    "state_rate_rows": 14,
+    "interstate_flow_rows": 56,
+    "all_interstate_cells_present": true,
+    "sum_2018_displayed_jurisdiction_fishers": 4216800,
+    "sum_interstate_employment_fte": 28736
+  }
+}

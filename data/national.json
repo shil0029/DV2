@@ -1,0 +1,813 @@
+{
+  "national_participation": [
+    {
+      "year": 2018,
+      "participation_percent": 21.4,
+      "sample_n": 11463,
+      "source_ref": "national-participation"
+    },
+    {
+      "year": 2020,
+      "participation_percent": 20.0,
+      "sample_n": 8736,
+      "source_ref": "national-participation"
+    }
+  ],
+  "state_participation": [
+    {
+      "region": "VIC",
+      "name": "Victoria",
+      "year": 2018,
+      "participation_percent": 16.4,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "VIC",
+      "name": "Victoria",
+      "year": 2020,
+      "participation_percent": 19.0,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "NSW/ACT",
+      "name": "New South Wales and ACT",
+      "year": 2018,
+      "participation_percent": 19.6,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "NSW/ACT",
+      "name": "New South Wales and ACT",
+      "year": 2020,
+      "participation_percent": 20.1,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "SA",
+      "name": "South Australia",
+      "year": 2018,
+      "participation_percent": 25.8,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "SA",
+      "name": "South Australia",
+      "year": 2020,
+      "participation_percent": 21.3,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "TAS",
+      "name": "Tasmania",
+      "year": 2018,
+      "participation_percent": 26.2,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "TAS",
+      "name": "Tasmania",
+      "year": 2020,
+      "participation_percent": 21.4,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "QLD",
+      "name": "Queensland",
+      "year": 2018,
+      "participation_percent": 25.9,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "QLD",
+      "name": "Queensland",
+      "year": 2020,
+      "participation_percent": 22.9,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "WA",
+      "name": "Western Australia",
+      "year": 2018,
+      "participation_percent": 25.8,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "WA",
+      "name": "Western Australia",
+      "year": 2020,
+      "participation_percent": 24.4,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "NT",
+      "name": "Northern Territory",
+      "year": 2018,
+      "participation_percent": 32.7,
+      "source_ref": "state-participation"
+    },
+    {
+      "region": "NT",
+      "name": "Northern Territory",
+      "year": 2020,
+      "participation_percent": 35.1,
+      "source_ref": "state-participation"
+    }
+  ],
+  "state_fishers_2018": [
+    {
+      "region": "VIC",
+      "year": 2018,
+      "participation_percent": 16.42,
+      "adult_population_june_2019": 5119957,
+      "estimated_fishers": 840900,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "NSW/ACT",
+      "year": 2018,
+      "participation_percent": 19.55,
+      "adult_population_june_2019": 6616409,
+      "estimated_fishers": 1293700,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "SA",
+      "year": 2018,
+      "participation_percent": 25.79,
+      "adult_population_june_2019": 1400589,
+      "estimated_fishers": 361300,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "TAS",
+      "year": 2018,
+      "participation_percent": 26.2,
+      "adult_population_june_2019": 438721,
+      "estimated_fishers": 115000,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "QLD",
+      "year": 2018,
+      "participation_percent": 25.9,
+      "adult_population_june_2019": 3922248,
+      "estimated_fishers": 1015700,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "WA",
+      "year": 2018,
+      "participation_percent": 25.78,
+      "adult_population_june_2019": 2053135,
+      "estimated_fishers": 529400,
+      "source_ref": "state-fishers-2018"
+    },
+    {
+      "region": "NT",
+      "year": 2018,
+      "participation_percent": 32.72,
+      "adult_population_june_2019": 185910,
+      "estimated_fishers": 60800,
+      "source_ref": "state-fishers-2018"
+    }
+  ],
+  "national_fishers_2018": {
+    "year": 2018,
+    "participation_percent": 21.37,
+    "adult_population_june_2019": 19740791,
+    "estimated_fishers": 4218600,
+    "other_or_no_fixed_address_fishers": 1900,
+    "source_ref": "state-fishers-2018"
+  },
+  "age_participation": [
+    {
+      "age_group": "18–29",
+      "year": 2018,
+      "participation_percent": 22.3,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "18–29",
+      "year": 2020,
+      "participation_percent": 24.8,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "30–44",
+      "year": 2018,
+      "participation_percent": 26.6,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "30–44",
+      "year": 2020,
+      "participation_percent": 20.6,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "45–64",
+      "year": 2018,
+      "participation_percent": 20.1,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "45–64",
+      "year": 2020,
+      "participation_percent": 18.0,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "65+",
+      "year": 2018,
+      "participation_percent": 15.5,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "age_group": "65+",
+      "year": 2020,
+      "participation_percent": 15.1,
+      "source_ref": "age-gender-participation"
+    }
+  ],
+  "gender_participation": [
+    {
+      "gender": "Female",
+      "year": 2018,
+      "participation_percent": 17.8,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "gender": "Female",
+      "year": 2020,
+      "participation_percent": 16.5,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "gender": "Male",
+      "year": 2018,
+      "participation_percent": 25.3,
+      "source_ref": "age-gender-participation"
+    },
+    {
+      "gender": "Male",
+      "year": 2020,
+      "participation_percent": 23.8,
+      "source_ref": "age-gender-participation"
+    }
+  ],
+  "activity_participation": [
+    {
+      "activity": "Walking (other than bushwalking)",
+      "participation_percent": 92.0,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Swimming",
+      "participation_percent": 58.7,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Bushwalking or hiking",
+      "participation_percent": 57.7,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Gym or exercise classes",
+      "participation_percent": 40.4,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Other outdoor or sports activities",
+      "participation_percent": 37.7,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Camping",
+      "participation_percent": 36.7,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Jogging or running",
+      "participation_percent": 34.8,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Playing sports with others",
+      "participation_percent": 33.1,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Cycling on roads or cycle paths",
+      "participation_percent": 31.6,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Fishing",
+      "participation_percent": 30.8,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Kayaking or canoeing",
+      "participation_percent": 18.4,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Mountain biking",
+      "participation_percent": 13.5,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Horse riding",
+      "participation_percent": 9.7,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Rock climbing or abseiling",
+      "participation_percent": 9.4,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Recreational hunting other than fishing",
+      "participation_percent": 9.2,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Snow sports",
+      "participation_percent": 8.9,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    },
+    {
+      "activity": "Aerial sports",
+      "participation_percent": 5.4,
+      "period": "Typical 2–3-year period, 2018 survey",
+      "source_ref": "activity-comparison"
+    }
+  ],
+  "interstate_employment_flows": [
+    {
+      "origin": "NSW",
+      "destination": "VIC",
+      "fte_jobs": 1807,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "QLD",
+      "fte_jobs": 2007,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "SA",
+      "fte_jobs": 402,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "WA",
+      "fte_jobs": 653,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "TAS",
+      "fte_jobs": 249,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "NT",
+      "fte_jobs": 389,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NSW",
+      "destination": "ACT",
+      "fte_jobs": 208,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "NSW",
+      "fte_jobs": 2661,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "QLD",
+      "fte_jobs": 880,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "SA",
+      "fte_jobs": 567,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "WA",
+      "fte_jobs": 679,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "TAS",
+      "fte_jobs": 430,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "NT",
+      "fte_jobs": 145,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "VIC",
+      "destination": "ACT",
+      "fte_jobs": 341,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "NSW",
+      "fte_jobs": 2794,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "VIC",
+      "fte_jobs": 1852,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "SA",
+      "fte_jobs": 373,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "WA",
+      "fte_jobs": 648,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "TAS",
+      "fte_jobs": 145,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "NT",
+      "fte_jobs": 83,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "QLD",
+      "destination": "ACT",
+      "fte_jobs": 103,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "NSW",
+      "fte_jobs": 790,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "VIC",
+      "fte_jobs": 869,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "QLD",
+      "fte_jobs": 507,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "WA",
+      "fte_jobs": 284,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "TAS",
+      "fte_jobs": 65,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "NT",
+      "fte_jobs": 44,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "SA",
+      "destination": "ACT",
+      "fte_jobs": 41,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "NSW",
+      "fte_jobs": 1356,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "VIC",
+      "fte_jobs": 1234,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "QLD",
+      "fte_jobs": 647,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "SA",
+      "fte_jobs": 410,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "TAS",
+      "fte_jobs": 86,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "NT",
+      "fte_jobs": 77,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "WA",
+      "destination": "ACT",
+      "fte_jobs": 87,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "NSW",
+      "fte_jobs": 285,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "VIC",
+      "fte_jobs": 192,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "QLD",
+      "fte_jobs": 187,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "SA",
+      "fte_jobs": 47,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "WA",
+      "fte_jobs": 63,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "NT",
+      "fte_jobs": 11,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "TAS",
+      "destination": "ACT",
+      "fte_jobs": 11,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "NSW",
+      "fte_jobs": 384,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "VIC",
+      "fte_jobs": 328,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "QLD",
+      "fte_jobs": 235,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "SA",
+      "fte_jobs": 69,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "WA",
+      "fte_jobs": 130,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "TAS",
+      "fte_jobs": 17,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "NT",
+      "destination": "ACT",
+      "fte_jobs": 24,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "NSW",
+      "fte_jobs": 1869,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "VIC",
+      "fte_jobs": 385,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "QLD",
+      "fte_jobs": 251,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "SA",
+      "fte_jobs": 102,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "WA",
+      "fte_jobs": 126,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "TAS",
+      "fte_jobs": 65,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    },
+    {
+      "origin": "ACT",
+      "destination": "NT",
+      "fte_jobs": 42,
+      "period": "2018–19",
+      "source_ref": "employment-flows"
+    }
+  ],
+  "spending_contributions": [
+    {
+      "category": "Capital expenditure",
+      "gdp_direct_aud_million": 548,
+      "gdp_flow_on_aud_million": 1314,
+      "gdp_total_aud_million": 1862,
+      "employment_direct_fte": 6506,
+      "employment_flow_on_fte": 9845,
+      "employment_total_fte": 16351,
+      "period": "2018–19",
+      "source_ref": "spending-contribution"
+    },
+    {
+      "category": "Day-trip travel",
+      "gdp_direct_aud_million": 451,
+      "gdp_flow_on_aud_million": 1267,
+      "gdp_total_aud_million": 1718,
+      "employment_direct_fte": 4990,
+      "employment_flow_on_fte": 9555,
+      "employment_total_fte": 14545,
+      "period": "2018–19",
+      "source_ref": "spending-contribution"
+    },
+    {
+      "category": "Fishing gear and tackle",
+      "gdp_direct_aud_million": 1007,
+      "gdp_flow_on_aud_million": 2279,
+      "gdp_total_aud_million": 3287,
+      "employment_direct_fte": 11324,
+      "employment_flow_on_fte": 16849,
+      "employment_total_fte": 28173,
+      "period": "2018–19",
+      "source_ref": "spending-contribution"
+    },
+    {
+      "category": "Overnight travel",
+      "gdp_direct_aud_million": 707,
+      "gdp_flow_on_aud_million": 1740,
+      "gdp_total_aud_million": 2447,
+      "employment_direct_fte": 9062,
+      "employment_flow_on_fte": 13239,
+      "employment_total_fte": 22301,
+      "period": "2018–19",
+      "source_ref": "spending-contribution"
+    },
+    {
+      "category": "Vessel running and other non-capital costs",
+      "gdp_direct_aud_million": 683,
+      "gdp_flow_on_aud_million": 1527,
+      "gdp_total_aud_million": 2209,
+      "employment_direct_fte": 8602,
+      "employment_flow_on_fte": 11371,
+      "employment_total_fte": 19973,
+      "period": "2018–19",
+      "source_ref": "spending-contribution"
+    }
+  ]
+}

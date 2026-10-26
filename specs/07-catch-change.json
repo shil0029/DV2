@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 360,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "species": "Bream",
+        "before": 1112741,
+        "after": 1265260,
+        "change": 152519
+      },
+      {
+        "species": "Dusky Flathead",
+        "before": 515197,
+        "after": 892908,
+        "change": 377711
+      },
+      {
+        "species": "Snapper",
+        "before": 306850,
+        "after": 517486,
+        "change": 210636
+      },
+      {
+        "species": "Murray Cod",
+        "before": 335478,
+        "after": 325457,
+        "change": -10021
+      },
+      {
+        "species": "Tailor",
+        "before": 214777,
+        "after": 320226,
+        "change": 105449
+      },
+      {
+        "species": "Sand Whiting",
+        "before": 302238,
+        "after": 297480,
+        "change": -4758
+      },
+      {
+        "species": "Sand Flathead",
+        "before": 205964,
+        "after": 270304,
+        "change": 64340
+      },
+      {
+        "species": "Luderick",
+        "before": 70960,
+        "after": 218770,
+        "change": 147810
+      }
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "species",
+      "type": "nominal",
+      "sort": [
+        "Bream",
+        "Dusky Flathead",
+        "Snapper",
+        "Murray Cod",
+        "Tailor",
+        "Sand Whiting",
+        "Sand Flathead",
+        "Luderick"
+      ],
+      "axis": {
+        "title": null,
+        "labelLimit": 130
+      }
+    },
+    "tooltip": [
+      {
+        "field": "species",
+        "title": "Species / group"
+      },
+      {
+        "field": "before",
+        "title": "2021/22 catches",
+        "format": ",.0f"
+      },
+      {
+        "field": "after",
+        "title": "2023/24 catches",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#b9c5bc",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "before",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1400000
+            ]
+          },
+          "axis": {
+            "title": "Estimated individual catches",
+            "format": ".2s",
+            "tickCount": 4
+          }
+        },
+        "x2": {
+          "field": "after"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "before",
+            "after"
+          ],
+          "as": [
+            "survey",
+            "catches"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90,
+        "stroke": "#fffef7",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "catches",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "survey",
+          "scale": {
+            "domain": [
+              "before",
+              "after"
+            ],
+            "range": [
+              "#c99c42",
+              "#147a80"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "labelExpr": "datum.label === 'before' ? '2021/22' : '2023/24'"
+          }
+        }
+      }
+    }
+  ]
+}

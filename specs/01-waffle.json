@@ -1,0 +1,587 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 230,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "padding": 0,
+  "description": "20 of 100 squares represent the 20.0% of Australian adults who fished in 2020.",
+  "data": {
+    "values": [
+      {
+        "col": 0,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 1,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 2,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 3,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 4,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 5,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 6,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 7,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 8,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 9,
+        "row": 0,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 0,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 1,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 2,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 3,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 4,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 5,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 6,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 7,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 8,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 9,
+        "row": 1,
+        "group": "Fished in 2020"
+      },
+      {
+        "col": 0,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 2,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 3,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 4,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 5,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 6,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 7,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 8,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 0,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 1,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 2,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 3,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 4,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 5,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 6,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 7,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 8,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      },
+      {
+        "col": 9,
+        "row": 9,
+        "group": "Did not fish in 2020"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 2,
+    "stroke": "#f7f5e9",
+    "strokeWidth": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Fished in 2020",
+          "Did not fish in 2020"
+        ],
+        "range": [
+          "#147a80",
+          "#dce3d7"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "group",
+        "title": "Adult population"
+      }
+    ]
+  }
+}

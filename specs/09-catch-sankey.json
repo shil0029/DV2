@@ -1,0 +1,318 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 700,
+  "height": 420,
+  "padding": {
+    "left": 0,
+    "right": 0,
+    "top": 12,
+    "bottom": 12
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": null,
+  "signals": [
+    {
+      "name": "xLeft",
+      "update": "width < 500 ? 112 : 150"
+    },
+    {
+      "name": "xRight",
+      "update": "width-92"
+    },
+    {
+      "name": "flowHeight",
+      "update": "height-66"
+    },
+    {
+      "name": "unit",
+      "update": "flowHeight/3618817"
+    }
+  ],
+  "data": [
+    {
+      "name": "links",
+      "values": [
+        {
+          "species": "Bream",
+          "fate": "Kept",
+          "value": 303727,
+          "start": 151863.5,
+          "end": 151863.5,
+          "rank": 0,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Bream",
+          "fate": "Released",
+          "value": 961533,
+          "start": 784493.5,
+          "end": 1583314.5,
+          "rank": 0,
+          "colour": "#147a80"
+        },
+        {
+          "species": "Dusky Flathead",
+          "fate": "Kept",
+          "value": 331309,
+          "start": 1430914.5,
+          "end": 469381.5,
+          "rank": 1,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Dusky Flathead",
+          "fate": "Released",
+          "value": 561599,
+          "start": 1877368.5,
+          "end": 2344880.5,
+          "rank": 1,
+          "colour": "#147a80"
+        },
+        {
+          "species": "Snapper",
+          "fate": "Kept",
+          "value": 166486,
+          "start": 2241411,
+          "end": 718279,
+          "rank": 2,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Snapper",
+          "fate": "Released",
+          "value": 351000,
+          "start": 2500154,
+          "end": 2801180,
+          "rank": 2,
+          "colour": "#147a80"
+        },
+        {
+          "species": "Murray Cod",
+          "fate": "Kept",
+          "value": 45825,
+          "start": 2698566.5,
+          "end": 824434.5,
+          "rank": 3,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Murray Cod",
+          "fate": "Released",
+          "value": 279632,
+          "start": 2861295,
+          "end": 3116496,
+          "rank": 3,
+          "colour": "#147a80"
+        },
+        {
+          "species": "Tailor",
+          "fate": "Kept",
+          "value": 141137,
+          "start": 3071679.5,
+          "end": 917915.5,
+          "rank": 4,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Tailor",
+          "fate": "Released",
+          "value": 179088,
+          "start": 3231792,
+          "end": 3345856,
+          "rank": 4,
+          "colour": "#147a80"
+        },
+        {
+          "species": "Sand Whiting",
+          "fate": "Kept",
+          "value": 114064,
+          "start": 3378368,
+          "end": 1045516,
+          "rank": 5,
+          "colour": "#c86a45"
+        },
+        {
+          "species": "Sand Whiting",
+          "fate": "Released",
+          "value": 183417,
+          "start": 3527108.5,
+          "end": 3527108.5,
+          "rank": 5,
+          "colour": "#147a80"
+        }
+      ]
+    },
+    {
+      "name": "nodes",
+      "values": [
+        {
+          "name": "Bream",
+          "side": "source",
+          "start": 0,
+          "end": 1265260,
+          "rank": 0,
+          "value": 1265260
+        },
+        {
+          "name": "Dusky Flathead",
+          "side": "source",
+          "start": 1265260,
+          "end": 2158168,
+          "rank": 1,
+          "value": 892908
+        },
+        {
+          "name": "Snapper",
+          "side": "source",
+          "start": 2158168,
+          "end": 2675654,
+          "rank": 2,
+          "value": 517486
+        },
+        {
+          "name": "Murray Cod",
+          "side": "source",
+          "start": 2675654,
+          "end": 3001111,
+          "rank": 3,
+          "value": 325457
+        },
+        {
+          "name": "Tailor",
+          "side": "source",
+          "start": 3001111,
+          "end": 3321336,
+          "rank": 4,
+          "value": 320225
+        },
+        {
+          "name": "Sand Whiting",
+          "side": "source",
+          "start": 3321336,
+          "end": 3618817,
+          "rank": 5,
+          "value": 297481
+        },
+        {
+          "name": "Kept",
+          "side": "target",
+          "start": 0,
+          "end": 1102548,
+          "rank": 0,
+          "value": 1102548
+        },
+        {
+          "name": "Released",
+          "side": "target",
+          "start": 1102548,
+          "end": 3618817,
+          "rank": 1,
+          "value": 2516269
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "path",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "update": {
+          "path": {
+            "signal": "'M'+(xLeft+9)+','+(datum.start*unit+datum.rank*10)+' C'+(xLeft+(xRight-xLeft)*0.5)+','+(datum.start*unit+datum.rank*10)+' '+(xLeft+(xRight-xLeft)*0.5)+','+(datum.end*unit+(datum.fate==='Released'?50:0))+' '+xRight+','+(datum.end*unit+(datum.fate==='Released'?50:0))"
+          },
+          "stroke": {
+            "field": "colour"
+          },
+          "strokeWidth": {
+            "signal": "datum.value*unit"
+          },
+          "strokeOpacity": {
+            "value": 0.42
+          },
+          "fill": {
+            "value": null
+          },
+          "tooltip": {
+            "signal": "{Species:datum.species,Outcome:datum.fate,'Estimated individuals':format(datum.value, ',')}"
+          }
+        },
+        "hover": {
+          "strokeOpacity": {
+            "value": 0.8
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "datum.side==='source'?xLeft:xRight"
+          },
+          "width": {
+            "value": 9
+          },
+          "y": {
+            "signal": "datum.start*unit+(datum.side==='source'?datum.rank*10:datum.rank*50)"
+          },
+          "height": {
+            "signal": "(datum.end-datum.start)*unit"
+          },
+          "fill": {
+            "signal": "datum.side==='source'?'#173e45':datum.name==='Kept'?'#c86a45':'#147a80'"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "nodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "datum.side==='source'?xLeft-9:xRight+17"
+          },
+          "y": {
+            "signal": "(datum.start+datum.end)/2*unit+(datum.side==='source'?datum.rank*10:datum.rank*50)"
+          },
+          "text": {
+            "field": "name"
+          },
+          "align": {
+            "signal": "datum.side==='source'?'right':'left'"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "DM Sans"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fontWeight": {
+            "value": 500
+          },
+          "fill": {
+            "value": "#173e45"
+          },
+          "limit": {
+            "signal": "datum.side==='source'?xLeft-12:85"
+          }
+        }
+      }
+    }
+  ]
+}

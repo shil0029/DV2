@@ -1,0 +1,2897 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 440,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -133,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -28
+    ]
+  },
+  "params": [
+    {
+      "name": "origin",
+      "value": "VIC"
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e4e8dc",
+        "stroke": "#faf9f2",
+        "strokeWidth": 1.3
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "origin": "NSW",
+            "destination": "VIC",
+            "fte_jobs": 1807,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "NSW",
+            "destination": "QLD",
+            "fte_jobs": 2007,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "NSW",
+            "destination": "SA",
+            "fte_jobs": 402,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "NSW",
+            "destination": "WA",
+            "fte_jobs": 653,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "NSW",
+            "destination": "TAS",
+            "fte_jobs": 249,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "NSW",
+            "destination": "NT",
+            "fte_jobs": 389,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "NSW",
+            "destination": "ACT",
+            "fte_jobs": 208,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "VIC",
+            "destination": "NSW",
+            "fte_jobs": 2661,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "VIC",
+            "destination": "QLD",
+            "fte_jobs": 880,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "VIC",
+            "destination": "SA",
+            "fte_jobs": 567,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "VIC",
+            "destination": "WA",
+            "fte_jobs": 679,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "VIC",
+            "destination": "TAS",
+            "fte_jobs": 430,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "VIC",
+            "destination": "NT",
+            "fte_jobs": 145,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "VIC",
+            "destination": "ACT",
+            "fte_jobs": 341,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "QLD",
+            "destination": "NSW",
+            "fte_jobs": 2794,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "QLD",
+            "destination": "VIC",
+            "fte_jobs": 1852,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "QLD",
+            "destination": "SA",
+            "fte_jobs": 373,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "QLD",
+            "destination": "WA",
+            "fte_jobs": 648,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "QLD",
+            "destination": "TAS",
+            "fte_jobs": 145,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "QLD",
+            "destination": "NT",
+            "fte_jobs": 83,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "QLD",
+            "destination": "ACT",
+            "fte_jobs": 103,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "SA",
+            "destination": "NSW",
+            "fte_jobs": 790,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "SA",
+            "destination": "VIC",
+            "fte_jobs": 869,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "SA",
+            "destination": "QLD",
+            "fte_jobs": 507,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "SA",
+            "destination": "WA",
+            "fte_jobs": 284,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "SA",
+            "destination": "TAS",
+            "fte_jobs": 65,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "SA",
+            "destination": "NT",
+            "fte_jobs": 44,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "SA",
+            "destination": "ACT",
+            "fte_jobs": 41,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "WA",
+            "destination": "NSW",
+            "fte_jobs": 1356,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "WA",
+            "destination": "VIC",
+            "fte_jobs": 1234,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "WA",
+            "destination": "QLD",
+            "fte_jobs": 647,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "WA",
+            "destination": "SA",
+            "fte_jobs": 410,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "WA",
+            "destination": "TAS",
+            "fte_jobs": 86,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "WA",
+            "destination": "NT",
+            "fte_jobs": 77,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "WA",
+            "destination": "ACT",
+            "fte_jobs": 87,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "TAS",
+            "destination": "NSW",
+            "fte_jobs": 285,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "TAS",
+            "destination": "VIC",
+            "fte_jobs": 192,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "TAS",
+            "destination": "QLD",
+            "fte_jobs": 187,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "TAS",
+            "destination": "SA",
+            "fte_jobs": 47,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "TAS",
+            "destination": "WA",
+            "fte_jobs": 63,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "TAS",
+            "destination": "NT",
+            "fte_jobs": 11,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "TAS",
+            "destination": "ACT",
+            "fte_jobs": 11,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "NT",
+            "destination": "NSW",
+            "fte_jobs": 384,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "NT",
+            "destination": "VIC",
+            "fte_jobs": 328,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "NT",
+            "destination": "QLD",
+            "fte_jobs": 235,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "NT",
+            "destination": "SA",
+            "fte_jobs": 69,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "NT",
+            "destination": "WA",
+            "fte_jobs": 130,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "NT",
+            "destination": "TAS",
+            "fte_jobs": 17,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "NT",
+            "destination": "ACT",
+            "fte_jobs": 24,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "ACT",
+            "destination": "NSW",
+            "fte_jobs": 1869,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "ACT",
+            "destination": "VIC",
+            "fte_jobs": 385,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "ACT",
+            "destination": "QLD",
+            "fte_jobs": 251,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "ACT",
+            "destination": "SA",
+            "fte_jobs": 102,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "ACT",
+            "destination": "WA",
+            "fte_jobs": 126,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "ACT",
+            "destination": "TAS",
+            "fte_jobs": 65,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "ACT",
+            "destination": "NT",
+            "fte_jobs": 42,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.origin === origin"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "stroke": "#147a80",
+        "strokeOpacity": 0.65
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        },
+        "strokeWidth": {
+          "field": "fte_jobs",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              3000
+            ],
+            "range": [
+              0,
+              14
+            ]
+          },
+          "legend": {
+            "title": "FTE jobs supported",
+            "orient": "bottom",
+            "values": [
+              100,
+              1000,
+              2500
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "origin",
+            "title": "From residents of"
+          },
+          {
+            "field": "destination",
+            "title": "Employment supported in"
+          },
+          {
+            "field": "fte_jobs",
+            "title": "FTE jobs",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "origin": "NSW",
+            "destination": "VIC",
+            "fte_jobs": 1807,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "NSW",
+            "destination": "QLD",
+            "fte_jobs": 2007,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "NSW",
+            "destination": "SA",
+            "fte_jobs": 402,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "NSW",
+            "destination": "WA",
+            "fte_jobs": 653,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "NSW",
+            "destination": "TAS",
+            "fte_jobs": 249,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "NSW",
+            "destination": "NT",
+            "fte_jobs": 389,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "NSW",
+            "destination": "ACT",
+            "fte_jobs": 208,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -33
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "VIC",
+            "destination": "NSW",
+            "fte_jobs": 2661,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "VIC",
+            "destination": "QLD",
+            "fte_jobs": 880,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "VIC",
+            "destination": "SA",
+            "fte_jobs": 567,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "VIC",
+            "destination": "WA",
+            "fte_jobs": 679,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "VIC",
+            "destination": "TAS",
+            "fte_jobs": 430,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "VIC",
+            "destination": "NT",
+            "fte_jobs": 145,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "VIC",
+            "destination": "ACT",
+            "fte_jobs": 341,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  144,
+                  -37
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "QLD",
+            "destination": "NSW",
+            "fte_jobs": 2794,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "QLD",
+            "destination": "VIC",
+            "fte_jobs": 1852,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "QLD",
+            "destination": "SA",
+            "fte_jobs": 373,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "QLD",
+            "destination": "WA",
+            "fte_jobs": 648,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "QLD",
+            "destination": "TAS",
+            "fte_jobs": 145,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "QLD",
+            "destination": "NT",
+            "fte_jobs": 83,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "QLD",
+            "destination": "ACT",
+            "fte_jobs": 103,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  145,
+                  -23
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "SA",
+            "destination": "NSW",
+            "fte_jobs": 790,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "SA",
+            "destination": "VIC",
+            "fte_jobs": 869,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "SA",
+            "destination": "QLD",
+            "fte_jobs": 507,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "SA",
+            "destination": "WA",
+            "fte_jobs": 284,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "SA",
+            "destination": "TAS",
+            "fte_jobs": 65,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "SA",
+            "destination": "NT",
+            "fte_jobs": 44,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "SA",
+            "destination": "ACT",
+            "fte_jobs": 41,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  135,
+                  -30
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "WA",
+            "destination": "NSW",
+            "fte_jobs": 1356,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "WA",
+            "destination": "VIC",
+            "fte_jobs": 1234,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "WA",
+            "destination": "QLD",
+            "fte_jobs": 647,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "WA",
+            "destination": "SA",
+            "fte_jobs": 410,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "WA",
+            "destination": "TAS",
+            "fte_jobs": 86,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "WA",
+            "destination": "NT",
+            "fte_jobs": 77,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "WA",
+            "destination": "ACT",
+            "fte_jobs": 87,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  121,
+                  -26
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "TAS",
+            "destination": "NSW",
+            "fte_jobs": 285,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "TAS",
+            "destination": "VIC",
+            "fte_jobs": 192,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "TAS",
+            "destination": "QLD",
+            "fte_jobs": 187,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "TAS",
+            "destination": "SA",
+            "fte_jobs": 47,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "TAS",
+            "destination": "WA",
+            "fte_jobs": 63,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "TAS",
+            "destination": "NT",
+            "fte_jobs": 11,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "origin": "TAS",
+            "destination": "ACT",
+            "fte_jobs": 11,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  147,
+                  -42
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "NT",
+            "destination": "NSW",
+            "fte_jobs": 384,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "NT",
+            "destination": "VIC",
+            "fte_jobs": 328,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "NT",
+            "destination": "QLD",
+            "fte_jobs": 235,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "NT",
+            "destination": "SA",
+            "fte_jobs": 69,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "NT",
+            "destination": "WA",
+            "fte_jobs": 130,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "NT",
+            "destination": "TAS",
+            "fte_jobs": 17,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "NT",
+            "destination": "ACT",
+            "fte_jobs": 24,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  133,
+                  -20
+                ],
+                [
+                  149.13,
+                  -35.28
+                ]
+              ]
+            },
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "origin": "ACT",
+            "destination": "NSW",
+            "fte_jobs": 1869,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  147,
+                  -33
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "origin": "ACT",
+            "destination": "VIC",
+            "fte_jobs": 385,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  144,
+                  -37
+                ]
+              ]
+            },
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "origin": "ACT",
+            "destination": "QLD",
+            "fte_jobs": 251,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  145,
+                  -23
+                ]
+              ]
+            },
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "origin": "ACT",
+            "destination": "SA",
+            "fte_jobs": 102,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  135,
+                  -30
+                ]
+              ]
+            },
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "origin": "ACT",
+            "destination": "WA",
+            "fte_jobs": 126,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  121,
+                  -26
+                ]
+              ]
+            },
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "origin": "ACT",
+            "destination": "TAS",
+            "fte_jobs": 65,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  147,
+                  -42
+                ]
+              ]
+            },
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "origin": "ACT",
+            "destination": "NT",
+            "fte_jobs": 42,
+            "period": "2018–19",
+            "source_ref": "employment-flows",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  149.13,
+                  -35.28
+                ],
+                [
+                  133,
+                  -20
+                ]
+              ]
+            },
+            "lon": 133,
+            "lat": -20
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.origin === origin"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "#147a80",
+        "size": 50,
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "origin",
+            "title": "Fisher residence"
+          },
+          {
+            "field": "destination",
+            "title": "Employment supported in"
+          },
+          {
+            "field": "fte_jobs",
+            "title": "FTE jobs (2018–19)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "code": "WA",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "code": "NT",
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "code": "SA",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "code": "QLD",
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "code": "NSW",
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "code": "ACT",
+            "lon": 149.13,
+            "lat": -35.28
+          },
+          {
+            "code": "VIC",
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "code": "TAS",
+            "lon": 147,
+            "lat": -42
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.code === origin"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#c86a45",
+        "size": 160,
+        "stroke": "#fffef7",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "code",
+            "title": "Fisher residence (selected origin)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "code": "WA",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "code": "NT",
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "code": "SA",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "code": "QLD",
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "code": "NSW",
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "code": "VIC",
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "code": "TAS",
+            "lon": 147,
+            "lat": -42
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "DM Sans",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#173e45",
+        "dy": -14
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code"
+        }
+      }
+    }
+  ]
+}

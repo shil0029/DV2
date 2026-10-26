@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 330,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "category": "Capital expenditure",
+        "gdp_direct_aud_million": 548,
+        "gdp_flow_on_aud_million": 1314,
+        "gdp_total_aud_million": 1862,
+        "employment_direct_fte": 6506,
+        "employment_flow_on_fte": 9845,
+        "employment_total_fte": 16351,
+        "period": "2018–19",
+        "source_ref": "spending-contribution",
+        "label": "Boats & other capital purchases"
+      },
+      {
+        "category": "Day-trip travel",
+        "gdp_direct_aud_million": 451,
+        "gdp_flow_on_aud_million": 1267,
+        "gdp_total_aud_million": 1718,
+        "employment_direct_fte": 4990,
+        "employment_flow_on_fte": 9555,
+        "employment_total_fte": 14545,
+        "period": "2018–19",
+        "source_ref": "spending-contribution",
+        "label": "Day-trip travel"
+      },
+      {
+        "category": "Fishing gear and tackle",
+        "gdp_direct_aud_million": 1007,
+        "gdp_flow_on_aud_million": 2279,
+        "gdp_total_aud_million": 3287,
+        "employment_direct_fte": 11324,
+        "employment_flow_on_fte": 16849,
+        "employment_total_fte": 28173,
+        "period": "2018–19",
+        "source_ref": "spending-contribution",
+        "label": "Fishing gear and tackle"
+      },
+      {
+        "category": "Overnight travel",
+        "gdp_direct_aud_million": 707,
+        "gdp_flow_on_aud_million": 1740,
+        "gdp_total_aud_million": 2447,
+        "employment_direct_fte": 9062,
+        "employment_flow_on_fte": 13239,
+        "employment_total_fte": 22301,
+        "period": "2018–19",
+        "source_ref": "spending-contribution",
+        "label": "Overnight travel"
+      },
+      {
+        "category": "Vessel running and other non-capital costs",
+        "gdp_direct_aud_million": 683,
+        "gdp_flow_on_aud_million": 1527,
+        "gdp_total_aud_million": 2209,
+        "employment_direct_fte": 8602,
+        "employment_flow_on_fte": 11371,
+        "employment_total_fte": 19973,
+        "period": "2018–19",
+        "source_ref": "spending-contribution",
+        "label": "Vessel running & other costs"
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#147a80",
+    "cornerRadiusEnd": 3,
+    "height": 26
+  },
+  "encoding": {
+    "y": {
+      "field": "label",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": null,
+        "labelLimit": 190
+      }
+    },
+    "x": {
+      "field": "gdp_total_aud_million",
+      "type": "quantitative",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "title": "GDP contribution (A$ million, 2018–19)",
+        "format": ",.0f",
+        "tickCount": 4
+      }
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Spending category"
+      },
+      {
+        "field": "gdp_direct_aud_million",
+        "title": "Direct GDP (A$m)",
+        "format": ",.0f"
+      },
+      {
+        "field": "gdp_flow_on_aud_million",
+        "title": "Flow-on GDP (A$m)",
+        "format": ",.0f"
+      },
+      {
+        "field": "gdp_total_aud_million",
+        "title": "Total GDP contribution (A$m)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

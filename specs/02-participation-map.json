@@ -1,0 +1,232 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 440,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -133,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -28
+    ]
+  },
+  "description": "Percentage of adults who fished at least once in 2020, by state or combined NSW/ACT region.",
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.region",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "region": "VIC",
+                  "name": "Victoria",
+                  "year": 2020,
+                  "participation_percent": 19,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "NSW/ACT",
+                  "name": "New South Wales and ACT",
+                  "year": 2020,
+                  "participation_percent": 20.1,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "SA",
+                  "name": "South Australia",
+                  "year": 2020,
+                  "participation_percent": 21.3,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "TAS",
+                  "name": "Tasmania",
+                  "year": 2020,
+                  "participation_percent": 21.4,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "QLD",
+                  "name": "Queensland",
+                  "year": 2020,
+                  "participation_percent": 22.9,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "WA",
+                  "name": "Western Australia",
+                  "year": 2020,
+                  "participation_percent": 24.4,
+                  "source_ref": "state-participation"
+                },
+                {
+                  "region": "NT",
+                  "name": "Northern Territory",
+                  "year": 2020,
+                  "participation_percent": 35.1,
+                  "source_ref": "state-participation"
+                }
+              ]
+            },
+            "key": "region",
+            "fields": [
+              "participation_percent"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#faf9f2",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "color": {
+          "field": "participation_percent",
+          "type": "quantitative",
+          "title": "Adults who fished (%)",
+          "scale": {
+            "domain": [
+              15,
+              36
+            ],
+            "range": [
+              "#dce6bd",
+              "#087980"
+            ]
+          },
+          "legend": {
+            "format": ".0f",
+            "gradientLength": 200
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.region",
+            "title": "Survey region"
+          },
+          {
+            "field": "participation_percent",
+            "title": "Adults who fished in 2020 (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "code": "WA",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "code": "NT",
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "code": "SA",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "code": "QLD",
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "code": "NSW",
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "code": "VIC",
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "code": "TAS",
+            "lon": 147,
+            "lat": -42
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "DM Sans",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#173e45"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code"
+        }
+      }
+    }
+  ]
+}

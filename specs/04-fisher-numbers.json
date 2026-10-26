@@ -1,0 +1,261 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 370,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "config": {
+    "background": null,
+    "font": "DM Sans",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#697d7c",
+      "titleColor": "#173e45",
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#dce2d9",
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "labelColor": "#173e45",
+      "titleColor": "#173e45",
+      "orient": "bottom",
+      "titleFontWeight": 500,
+      "padding": 12
+    },
+    "style": {
+      "cell": {
+        "stroke": null
+      }
+    }
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -133,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -28
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e4e8dc",
+        "stroke": "#faf9f2",
+        "strokeWidth": 1.3
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "region": "VIC",
+            "year": 2018,
+            "participation_percent": 16.42,
+            "adult_population_june_2019": 5119957,
+            "estimated_fishers": 840900,
+            "source_ref": "state-fishers-2018",
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "region": "NSW/ACT",
+            "year": 2018,
+            "participation_percent": 19.55,
+            "adult_population_june_2019": 6616409,
+            "estimated_fishers": 1293700,
+            "source_ref": "state-fishers-2018",
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "region": "SA",
+            "year": 2018,
+            "participation_percent": 25.79,
+            "adult_population_june_2019": 1400589,
+            "estimated_fishers": 361300,
+            "source_ref": "state-fishers-2018",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "region": "TAS",
+            "year": 2018,
+            "participation_percent": 26.2,
+            "adult_population_june_2019": 438721,
+            "estimated_fishers": 115000,
+            "source_ref": "state-fishers-2018",
+            "lon": 147,
+            "lat": -42
+          },
+          {
+            "region": "QLD",
+            "year": 2018,
+            "participation_percent": 25.9,
+            "adult_population_june_2019": 3922248,
+            "estimated_fishers": 1015700,
+            "source_ref": "state-fishers-2018",
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "region": "WA",
+            "year": 2018,
+            "participation_percent": 25.78,
+            "adult_population_june_2019": 2053135,
+            "estimated_fishers": 529400,
+            "source_ref": "state-fishers-2018",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "region": "NT",
+            "year": 2018,
+            "participation_percent": 32.72,
+            "adult_population_june_2019": 185910,
+            "estimated_fishers": 60800,
+            "source_ref": "state-fishers-2018",
+            "lon": 133,
+            "lat": -20
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#147a80",
+        "opacity": 0.7,
+        "stroke": "#fffef7",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "estimated_fishers",
+          "type": "quantitative",
+          "title": "Adult fishers (2018)",
+          "scale": {
+            "range": [
+              0,
+              4500
+            ],
+            "zero": true
+          },
+          "legend": {
+            "values": [
+              100000,
+              500000,
+              1000000
+            ],
+            "format": ".2s"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "Survey region"
+          },
+          {
+            "field": "estimated_fishers",
+            "title": "Estimated adult fishers in 2018",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "code": "WA",
+            "lon": 121,
+            "lat": -26
+          },
+          {
+            "code": "NT",
+            "lon": 133,
+            "lat": -20
+          },
+          {
+            "code": "SA",
+            "lon": 135,
+            "lat": -30
+          },
+          {
+            "code": "QLD",
+            "lon": 145,
+            "lat": -23
+          },
+          {
+            "code": "NSW",
+            "lon": 147,
+            "lat": -33
+          },
+          {
+            "code": "VIC",
+            "lon": 144,
+            "lat": -37
+          },
+          {
+            "code": "TAS",
+            "lon": 147,
+            "lat": -42
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "DM Sans",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#173e45",
+        "dy": -8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code"
+        }
+      }
+    }
+  ]
+}

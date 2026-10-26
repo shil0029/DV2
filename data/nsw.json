@@ -1,0 +1,677 @@
+{
+  "source": "https://www.dpird.nsw.gov.au/__data/assets/pdf_file/0011/1646246/Appendices.pdf",
+  "source_page": 3,
+  "retrieved": "2026-10-26",
+  "population": "Members of households holding a long-term NSW recreational fishing licence who fished in NSW waters.",
+  "unit": "Estimated individual organisms caught, not tonnes or unique fishers.",
+  "notes": [
+    "Twenty monitored species or species groups, not all NSW catches.",
+    "NSW data are a case study; they do not represent all Australian recreational fishing.",
+    "Estimates have sampling uncertainty; changes in point estimates are not tests of statistical significance.",
+    "Kept, released and total estimates are independently rounded. The source has differences of up to three organisms.",
+    "Heatmap release shares use released / published total. Sankey widths use kept + released so the diagram conserves its displayed flows.",
+    "Sand Flathead and Leatherjacket are source species groupings. Bream also groups multiple species.",
+    "European Carp is absent from the 20-species time-comparison table and has not been added from another table."
+  ],
+  "catch": [
+    {
+      "species": "Australian Bass",
+      "year": "2017/18",
+      "total": 245690,
+      "kept": 11142,
+      "released": 234548,
+      "release_share": 0.9546501689120437
+    },
+    {
+      "species": "Blue Swimmer Crab",
+      "year": "2017/18",
+      "total": 84000,
+      "kept": 63034,
+      "released": 20966,
+      "release_share": 0.2495952380952381
+    },
+    {
+      "species": "Bream",
+      "year": "2017/18",
+      "total": 944288,
+      "kept": 228553,
+      "released": 715735,
+      "release_share": 0.7579626131010878
+    },
+    {
+      "species": "Brown Trout",
+      "year": "2017/18",
+      "total": 90086,
+      "kept": 37865,
+      "released": 52221,
+      "release_share": 0.5796794174455521
+    },
+    {
+      "species": "Dusky Flathead",
+      "year": "2017/18",
+      "total": 886749,
+      "kept": 310650,
+      "released": 576099,
+      "release_share": 0.6496753872854664
+    },
+    {
+      "species": "Australian Salmon",
+      "year": "2017/18",
+      "total": 60556,
+      "kept": 33948,
+      "released": 26607,
+      "release_share": 0.43937842658035536
+    },
+    {
+      "species": "Golden Perch",
+      "year": "2017/18",
+      "total": 194758,
+      "kept": 79297,
+      "released": 115461,
+      "release_share": 0.592843426200721
+    },
+    {
+      "species": "Leatherjacket",
+      "year": "2017/18",
+      "total": 53063,
+      "kept": 31106,
+      "released": 21956,
+      "release_share": 0.4137723083881424
+    },
+    {
+      "species": "Luderick",
+      "year": "2017/18",
+      "total": 83544,
+      "kept": 51272,
+      "released": 32272,
+      "release_share": 0.38628746528775254
+    },
+    {
+      "species": "Grey Morwong",
+      "year": "2017/18",
+      "total": 33859,
+      "kept": 26770,
+      "released": 7090,
+      "release_share": 0.20939779674532621
+    },
+    {
+      "species": "Mulloway",
+      "year": "2017/18",
+      "total": 27173,
+      "kept": 13641,
+      "released": 13533,
+      "release_share": 0.4980311338460972
+    },
+    {
+      "species": "Murray Cod",
+      "year": "2017/18",
+      "total": 416677,
+      "kept": 36434,
+      "released": 380242,
+      "release_share": 0.9125581685574198
+    },
+    {
+      "species": "Rainbow Trout",
+      "year": "2017/18",
+      "total": 85200,
+      "kept": 28595,
+      "released": 56606,
+      "release_share": 0.6643896713615024
+    },
+    {
+      "species": "Sand Flathead",
+      "year": "2017/18",
+      "total": 648602,
+      "kept": 281844,
+      "released": 366758,
+      "release_share": 0.5654592492776772
+    },
+    {
+      "species": "Sand Whiting",
+      "year": "2017/18",
+      "total": 340783,
+      "kept": 120831,
+      "released": 219953,
+      "release_share": 0.6454341912595405
+    },
+    {
+      "species": "Silver Trevally",
+      "year": "2017/18",
+      "total": 49258,
+      "kept": 15315,
+      "released": 33942,
+      "release_share": 0.6890657355150432
+    },
+    {
+      "species": "Snapper",
+      "year": "2017/18",
+      "total": 451427,
+      "kept": 157534,
+      "released": 293893,
+      "release_share": 0.6510310637157282
+    },
+    {
+      "species": "Tailor",
+      "year": "2017/18",
+      "total": 227200,
+      "kept": 89914,
+      "released": 137286,
+      "release_share": 0.6042517605633803
+    },
+    {
+      "species": "Yabbies",
+      "year": "2017/18",
+      "total": 280681,
+      "kept": 180446,
+      "released": 100234,
+      "release_share": 0.3571100288227561
+    },
+    {
+      "species": "Yellowtail Kingfish",
+      "year": "2017/18",
+      "total": 107865,
+      "kept": 45791,
+      "released": 62074,
+      "release_share": 0.5754786075186575
+    },
+    {
+      "species": "Australian Bass",
+      "year": "2019/20",
+      "total": 84273,
+      "kept": 2161,
+      "released": 82112,
+      "release_share": 0.9743571487902413
+    },
+    {
+      "species": "Blue Swimmer Crab",
+      "year": "2019/20",
+      "total": 69116,
+      "kept": 42325,
+      "released": 26791,
+      "release_share": 0.3876237050755252
+    },
+    {
+      "species": "Bream",
+      "year": "2019/20",
+      "total": 1098534,
+      "kept": 234009,
+      "released": 864525,
+      "release_share": 0.7869806487555233
+    },
+    {
+      "species": "Brown Trout",
+      "year": "2019/20",
+      "total": 37132,
+      "kept": 14170,
+      "released": 22962,
+      "release_share": 0.6183884520090488
+    },
+    {
+      "species": "Dusky Flathead",
+      "year": "2019/20",
+      "total": 572822,
+      "kept": 182489,
+      "released": 390333,
+      "release_share": 0.6814211046363443
+    },
+    {
+      "species": "Australian Salmon",
+      "year": "2019/20",
+      "total": 61042,
+      "kept": 22292,
+      "released": 38750,
+      "release_share": 0.6348088201566134
+    },
+    {
+      "species": "Golden Perch",
+      "year": "2019/20",
+      "total": 97543,
+      "kept": 43560,
+      "released": 53984,
+      "release_share": 0.5534379709461468
+    },
+    {
+      "species": "Leatherjacket",
+      "year": "2019/20",
+      "total": 38111,
+      "kept": 18108,
+      "released": 20003,
+      "release_share": 0.5248615885177508
+    },
+    {
+      "species": "Luderick",
+      "year": "2019/20",
+      "total": 56540,
+      "kept": 39577,
+      "released": 16963,
+      "release_share": 0.3000176865935621
+    },
+    {
+      "species": "Grey Morwong",
+      "year": "2019/20",
+      "total": 15671,
+      "kept": 13264,
+      "released": 2407,
+      "release_share": 0.1535958139238083
+    },
+    {
+      "species": "Mulloway",
+      "year": "2019/20",
+      "total": 15619,
+      "kept": 6431,
+      "released": 9188,
+      "release_share": 0.5882578910301556
+    },
+    {
+      "species": "Murray Cod",
+      "year": "2019/20",
+      "total": 198045,
+      "kept": 7597,
+      "released": 190448,
+      "release_share": 0.9616400313060163
+    },
+    {
+      "species": "Rainbow Trout",
+      "year": "2019/20",
+      "total": 26970,
+      "kept": 6435,
+      "released": 20535,
+      "release_share": 0.7614015572858732
+    },
+    {
+      "species": "Sand Flathead",
+      "year": "2019/20",
+      "total": 370182,
+      "kept": 158386,
+      "released": 211796,
+      "release_share": 0.5721401905008887
+    },
+    {
+      "species": "Sand Whiting",
+      "year": "2019/20",
+      "total": 391146,
+      "kept": 165755,
+      "released": 225391,
+      "release_share": 0.5762324042684829
+    },
+    {
+      "species": "Silver Trevally",
+      "year": "2019/20",
+      "total": 67360,
+      "kept": 24476,
+      "released": 42883,
+      "release_share": 0.636624109263658
+    },
+    {
+      "species": "Snapper",
+      "year": "2019/20",
+      "total": 475753,
+      "kept": 126989,
+      "released": 348764,
+      "release_share": 0.7330778786471132
+    },
+    {
+      "species": "Tailor",
+      "year": "2019/20",
+      "total": 191542,
+      "kept": 56416,
+      "released": 135126,
+      "release_share": 0.7054640757640622
+    },
+    {
+      "species": "Yabbies",
+      "year": "2019/20",
+      "total": 73501,
+      "kept": 63173,
+      "released": 10328,
+      "release_share": 0.14051509503272064
+    },
+    {
+      "species": "Yellowtail Kingfish",
+      "year": "2019/20",
+      "total": 82025,
+      "kept": 31184,
+      "released": 50841,
+      "release_share": 0.6198232246266382
+    },
+    {
+      "species": "Australian Bass",
+      "year": "2021/22",
+      "total": 57407,
+      "kept": 1686,
+      "released": 55721,
+      "release_share": 0.9706307593150661
+    },
+    {
+      "species": "Blue Swimmer Crab",
+      "year": "2021/22",
+      "total": 18180,
+      "kept": 13124,
+      "released": 5057,
+      "release_share": 0.27816281628162814
+    },
+    {
+      "species": "Bream",
+      "year": "2021/22",
+      "total": 1112741,
+      "kept": 223876,
+      "released": 888865,
+      "release_share": 0.7988067304071658
+    },
+    {
+      "species": "Brown Trout",
+      "year": "2021/22",
+      "total": 160864,
+      "kept": 12949,
+      "released": 147915,
+      "release_share": 0.9195034314700616
+    },
+    {
+      "species": "Dusky Flathead",
+      "year": "2021/22",
+      "total": 515197,
+      "kept": 148158,
+      "released": 367040,
+      "release_share": 0.7124265086947323
+    },
+    {
+      "species": "Australian Salmon",
+      "year": "2021/22",
+      "total": 87561,
+      "kept": 17336,
+      "released": 70225,
+      "release_share": 0.8020123114171834
+    },
+    {
+      "species": "Golden Perch",
+      "year": "2021/22",
+      "total": 110661,
+      "kept": 23728,
+      "released": 86933,
+      "release_share": 0.7855793820767931
+    },
+    {
+      "species": "Leatherjacket",
+      "year": "2021/22",
+      "total": 25228,
+      "kept": 8437,
+      "released": 16791,
+      "release_share": 0.6655700015855399
+    },
+    {
+      "species": "Luderick",
+      "year": "2021/22",
+      "total": 70960,
+      "kept": 57175,
+      "released": 13785,
+      "release_share": 0.19426437429537768
+    },
+    {
+      "species": "Grey Morwong",
+      "year": "2021/22",
+      "total": 14208,
+      "kept": 10360,
+      "released": 3847,
+      "release_share": 0.27076295045045046
+    },
+    {
+      "species": "Mulloway",
+      "year": "2021/22",
+      "total": 71277,
+      "kept": 12830,
+      "released": 58447,
+      "release_share": 0.8199980358320356
+    },
+    {
+      "species": "Murray Cod",
+      "year": "2021/22",
+      "total": 335478,
+      "kept": 17483,
+      "released": 317995,
+      "release_share": 0.9478862995487036
+    },
+    {
+      "species": "Rainbow Trout",
+      "year": "2021/22",
+      "total": 176437,
+      "kept": 28935,
+      "released": 147502,
+      "release_share": 0.8360037860539457
+    },
+    {
+      "species": "Sand Flathead",
+      "year": "2021/22",
+      "total": 205964,
+      "kept": 89530,
+      "released": 116433,
+      "release_share": 0.5653075294711697
+    },
+    {
+      "species": "Sand Whiting",
+      "year": "2021/22",
+      "total": 302238,
+      "kept": 127872,
+      "released": 174366,
+      "release_share": 0.5769162051098803
+    },
+    {
+      "species": "Silver Trevally",
+      "year": "2021/22",
+      "total": 55723,
+      "kept": 20605,
+      "released": 35118,
+      "release_share": 0.6302245033469124
+    },
+    {
+      "species": "Snapper",
+      "year": "2021/22",
+      "total": 306850,
+      "kept": 80339,
+      "released": 226511,
+      "release_share": 0.7381815219162458
+    },
+    {
+      "species": "Tailor",
+      "year": "2021/22",
+      "total": 214777,
+      "kept": 61261,
+      "released": 153516,
+      "release_share": 0.7147692723150058
+    },
+    {
+      "species": "Yabbies",
+      "year": "2021/22",
+      "total": 259616,
+      "kept": 163665,
+      "released": 95951,
+      "release_share": 0.369588160976211
+    },
+    {
+      "species": "Yellowtail Kingfish",
+      "year": "2021/22",
+      "total": 48376,
+      "kept": 10062,
+      "released": 38314,
+      "release_share": 0.7920042996527203
+    },
+    {
+      "species": "Australian Bass",
+      "year": "2023/24",
+      "total": 128779,
+      "kept": 8480,
+      "released": 120299,
+      "release_share": 0.9341507543931852
+    },
+    {
+      "species": "Blue Swimmer Crab",
+      "year": "2023/24",
+      "total": 117936,
+      "kept": 92833,
+      "released": 25103,
+      "release_share": 0.21285273368606702
+    },
+    {
+      "species": "Bream",
+      "year": "2023/24",
+      "total": 1265260,
+      "kept": 303727,
+      "released": 961533,
+      "release_share": 0.7599489433001912
+    },
+    {
+      "species": "Brown Trout",
+      "year": "2023/24",
+      "total": 117051,
+      "kept": 26741,
+      "released": 90310,
+      "release_share": 0.7715440278169345
+    },
+    {
+      "species": "Dusky Flathead",
+      "year": "2023/24",
+      "total": 892908,
+      "kept": 331309,
+      "released": 561599,
+      "release_share": 0.6289550547200832
+    },
+    {
+      "species": "Australian Salmon",
+      "year": "2023/24",
+      "total": 103452,
+      "kept": 41455,
+      "released": 61997,
+      "release_share": 0.5992827591540038
+    },
+    {
+      "species": "Golden Perch",
+      "year": "2023/24",
+      "total": 109694,
+      "kept": 38759,
+      "released": 70935,
+      "release_share": 0.6466625339581016
+    },
+    {
+      "species": "Leatherjacket",
+      "year": "2023/24",
+      "total": 70730,
+      "kept": 50318,
+      "released": 20413,
+      "release_share": 0.2886045525236816
+    },
+    {
+      "species": "Luderick",
+      "year": "2023/24",
+      "total": 218770,
+      "kept": 141596,
+      "released": 77173,
+      "release_share": 0.35275860492754946
+    },
+    {
+      "species": "Grey Morwong",
+      "year": "2023/24",
+      "total": 11857,
+      "kept": 7478,
+      "released": 4379,
+      "release_share": 0.3693177026229232
+    },
+    {
+      "species": "Mulloway",
+      "year": "2023/24",
+      "total": 75168,
+      "kept": 18132,
+      "released": 57036,
+      "release_share": 0.7587803320561941
+    },
+    {
+      "species": "Murray Cod",
+      "year": "2023/24",
+      "total": 325457,
+      "kept": 45825,
+      "released": 279632,
+      "release_share": 0.8591979892889076
+    },
+    {
+      "species": "Rainbow Trout",
+      "year": "2023/24",
+      "total": 130493,
+      "kept": 23773,
+      "released": 106720,
+      "release_share": 0.8178216456055114
+    },
+    {
+      "species": "Sand Flathead",
+      "year": "2023/24",
+      "total": 270304,
+      "kept": 133610,
+      "released": 136694,
+      "release_share": 0.5057046880549307
+    },
+    {
+      "species": "Sand Whiting",
+      "year": "2023/24",
+      "total": 297480,
+      "kept": 114064,
+      "released": 183417,
+      "release_share": 0.6165691811214199
+    },
+    {
+      "species": "Silver Trevally",
+      "year": "2023/24",
+      "total": 70537,
+      "kept": 25465,
+      "released": 45072,
+      "release_share": 0.6389837957384068
+    },
+    {
+      "species": "Snapper",
+      "year": "2023/24",
+      "total": 517486,
+      "kept": 166486,
+      "released": 351000,
+      "release_share": 0.6782792191479576
+    },
+    {
+      "species": "Tailor",
+      "year": "2023/24",
+      "total": 320226,
+      "kept": 141137,
+      "released": 179088,
+      "release_share": 0.5592550261377902
+    },
+    {
+      "species": "Yabbies",
+      "year": "2023/24",
+      "total": 126011,
+      "kept": 104290,
+      "released": 21721,
+      "release_share": 0.17237384037901454
+    },
+    {
+      "species": "Yellowtail Kingfish",
+      "year": "2023/24",
+      "total": 131485,
+      "kept": 47705,
+      "released": 83780,
+      "release_share": 0.6371829486253184
+    }
+  ],
+  "waterbody_effort": [
+    {
+      "waterbody": "Estuaries",
+      "days": 1033207
+    },
+    {
+      "waterbody": "Ocean",
+      "days": 532678
+    },
+    {
+      "waterbody": "Rivers",
+      "days": 408190
+    },
+    {
+      "waterbody": "Lakes and dams",
+      "days": 159602
+    }
+  ],
+  "waterbody_note": "Appendices page 2. Waterbody-specific fisher-days can overlap and should not be added to estimate unique statewide fisher-days."
+}

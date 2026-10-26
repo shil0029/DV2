@@ -1,0 +1,11 @@
+{
+  "name": "gone-fishing-australia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recreational fishing in Australia, told with Vega and Vega-Lite",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "build:specs": "node scripts/build-specs.cjs",
+    "check": "node scripts/check.cjs"
+  }
+}

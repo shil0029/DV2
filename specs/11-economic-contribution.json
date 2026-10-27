@@ -8,7 +8,7 @@
   },
   "config": {
     "background": null,
-    "font": "DM Sans",
+    "font": "Source Sans 3",
     "view": {
       "stroke": null
     },
@@ -152,6 +152,12 @@
         "format": ",.0f"
       }
     ]
+  },
+  "padding": {
+    "left": 22,
+    "right": 8,
+    "top": 5,
+    "bottom": 5
   },
   "layer": [
     {

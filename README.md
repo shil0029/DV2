@@ -22,19 +22,21 @@ The national report covers adult participation, while the NSW survey covers hous
 
 ## Chart choices
 
+Each chart name below opens its readable Vega/Vega-Lite JSON. The public page links to this repository from Sources, keeping implementation links out of the chart captions.
+
 | Chart | Idiom | Reader's task |
 | --- | --- | --- |
-| 01 | Waffle | Understand what 20% national participation means |
-| 02 | Choropleth map | Compare participation rates between regions |
-| 03 | Slope graph | Compare age-group participation in two survey years |
-| 04 | Proportional symbol map | Compare the sizes of regional fishing communities |
-| 05 | Treemap | See the composition of the monitored NSW catch |
-| 06 | Heatmap | Compare species' release shares across four surveys |
-| 07 | Dumbbell | Compare two catch estimates on one aligned scale |
-| 08 | Line chart with species selector | Follow one species across four surveys |
-| 09 | Sankey | Follow estimated catches into kept and released outcomes |
-| 10 | Flow map with origin selector | See interstate employment connections from fishing spending |
-| 11 | Ranked bar chart | Compare GDP contributions associated with spending categories |
+| 01 | [Waffle](specs/01-waffle.json) | Understand what 20% national participation means |
+| 02 | [Choropleth map](specs/02-participation-map.json) | Compare participation rates between regions |
+| 03 | [Slope graph](specs/03-age-slopes.json) | Compare age-group participation in two survey years |
+| 04 | [Proportional symbol map](specs/04-fisher-numbers.json) | Compare the sizes of regional fishing communities |
+| 05 | [Treemap](specs/05-catch-treemap.json) | See the composition of the monitored NSW catch |
+| 06 | [Heatmap](specs/06-release-heatmap.json) | Compare species' release shares across four surveys |
+| 07 | [Dumbbell](specs/07-catch-change.json) | Compare two catch estimates on one aligned scale |
+| 08 | [Line chart with species selector](specs/08-catch-timeline.json) | Follow one species across four surveys |
+| 09 | [Sankey](specs/09-catch-sankey.json) | Follow estimated catches into kept and released outcomes |
+| 10 | [Flow map with origin selector](specs/10-economic-flow-map.json) | See interstate employment connections from fishing spending |
+| 11 | [Ranked bar chart](specs/11-economic-contribution.json) | Compare GDP contributions associated with spending categories |
 
 ## Domain, who, why, what and how
 
@@ -61,7 +63,7 @@ Reviewed in the order of the supplied brief, pages 5–6. This records the evide
 | Sketch — 2% | Excluded at the owner's request. There is no hand-drawn sketch submission to assess. |
 | Idioms and complexity — 8% | 11 distinct charts, including choropleth, proportional-symbol and flow maps. Nine named idioms fall outside the rubric's basic-idiom list; the line and ranked bar are basic. Preserved appropriate rate, area, position and width encodings. Clarified NSW/ACT, added an ACT callout, improved the flow-width legend, and added redundant marker shapes. |
 | Layout, colour, figure-ground — 3% | Retained aligned columns and the continuous story. Replaced cream/teal with cool white, slate blue and muted copper. Darkened treemap fills for readable white labels, used a light label on the darkest map region, and removed the hero panel's rotation. |
-| Typography — 2% | Retained locally licensed Fraunces and DM Sans. Increased captions, source notes and introductory text; limited long reading lines. Treemap labels have more than 4.5:1 contrast against their fills. |
+| Typography — 2% | Uses locally licensed Source Sans 3 across headings, body copy and charts, with weight and size establishing hierarchy. Increased captions, source notes and introductory text; limited long reading lines. Treemap labels have more than 4.5:1 contrast against their fills. |
 | Storytelling, annotations, grammar and style — 5% | Added direct map rates, a slope annotation, heatmap percentages, timeline values and an updating species summary, Sankey totals/shares and GDP bar labels. Explained abbreviated units and GDP; simplified uncertainty language. Preserved dated sources, author, provenance and AI acknowledgement. Fixed the mobile Sankey's crossed columns. |
 | Description of domain, who, what, why, how — 2% | Expanded the rationale above with audience, purpose, source methods, population limits, mark/channel choices and interaction rationale. |
 | Interview — 3% | Excluded at the owner's request. It is not something the website can complete. |
@@ -85,6 +87,8 @@ The published site was verified on 26 October 2026: all 11 charts rendered, both
 Reference: [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Attribution
+
+Typeface: [Source Sans 3](https://github.com/google/fonts/tree/main/ofl/sourcesans3), by Adobe, distributed under the [SIL Open Font Licence](fonts/Source-Sans-3-OFL.txt). Upright and italic variable fonts are bundled locally.
 
 Author: Sean Hilder. Created 26 October 2026. Developed with assistance from OpenAI Codex for research, data transcription, code, chart design, wording and verification. This acknowledgement should also accompany any assessment submission. No third-party charts have been copied into the page.
 

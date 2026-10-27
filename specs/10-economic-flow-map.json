@@ -8,7 +8,7 @@
   },
   "config": {
     "background": null,
-    "font": "DM Sans",
+    "font": "Source Sans 3",
     "view": {
       "stroke": null
     },
@@ -2876,7 +2876,7 @@
       },
       "mark": {
         "type": "text",
-        "font": "DM Sans",
+        "font": "Source Sans 3",
         "fontSize": 11,
         "fontWeight": 600,
         "color": "#21374b",

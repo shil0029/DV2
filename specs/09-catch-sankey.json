@@ -9,7 +9,7 @@
     "bottom": 12
   },
   "autosize": {
-    "type": "fit",
+    "type": "none",
     "contains": "padding"
   },
   "background": null,
@@ -213,6 +213,16 @@
           "value": 2516269
         }
       ]
+    },
+    {
+      "name": "outcomes",
+      "source": "nodes",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.side === 'target'"
+        }
+      ]
     }
   ],
   "marks": [
@@ -310,6 +320,43 @@
           },
           "limit": {
             "signal": "datum.side==='source'?xLeft-12:85"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "outcomes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "xRight+17"
+          },
+          "y": {
+            "signal": "(datum.start+datum.end)/2*unit+datum.rank*50+18"
+          },
+          "text": {
+            "signal": "[format(datum.value/1000000, '.2f')+'m', format(datum.value/3618817, '.0%')+' of total']"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "lineHeight": {
+            "value": 14
+          },
+          "font": {
+            "value": "DM Sans"
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "fill": {
+            "value": "#21374b"
           }
         }
       }

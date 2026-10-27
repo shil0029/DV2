@@ -103,17 +103,17 @@
       }
     ]
   },
-  "mark": {
-    "type": "bar",
-    "color": "#386f98",
-    "cornerRadiusEnd": 3,
-    "height": 26
-  },
   "encoding": {
     "y": {
       "field": "label",
       "type": "nominal",
-      "sort": "-x",
+      "sort": [
+        "Fishing gear and tackle",
+        "Overnight travel",
+        "Vessel running & other costs",
+        "Boats & other capital purchases",
+        "Day-trip travel"
+      ],
       "axis": {
         "title": null,
         "labelLimit": 190
@@ -152,5 +152,31 @@
         "format": ",.0f"
       }
     ]
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#386f98",
+        "cornerRadiusEnd": 3,
+        "height": 26
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -7,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#ffffff"
+      },
+      "encoding": {
+        "text": {
+          "field": "gdp_total_aud_million",
+          "format": ",.0f"
+        }
+      }
+    }
+  ]
 }

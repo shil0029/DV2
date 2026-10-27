@@ -75,4 +75,55 @@ let flowSpec=JSON.parse(fs.readFileSync(path.join(root,'specs/10-economic-flow-m
 // 11. GDP contribution by spending category. These are not retail expenditure totals.
 const spending=national.spending_contributions.map(r=>({...r,label:r.category==='Vessel running and other non-capital costs'?'Vessel running & other costs':r.category==='Capital expenditure'?'Boats & other capital purchases':r.category}));
 vl('11-economic-contribution',{height:330,data:{values:spending},mark:{type:'bar',color:C.sea,cornerRadiusEnd:3,height:26},encoding:{y:{field:'label',type:'nominal',sort:'-x',axis:{title:null,labelLimit:190}},x:{field:'gdp_total_aud_million',type:'quantitative',scale:{zero:true},axis:{title:'Contribution (A$m)',format:',.0f',tickCount:4}},tooltip:[{field:'category',title:'Spending category'},{field:'gdp_direct_aud_million',title:'Direct GDP (A$m)',format:',.0f'},{field:'gdp_flow_on_aud_million',title:'Flow-on GDP (A$m)',format:',.0f'},{field:'gdp_total_aud_million',title:'Total GDP contribution (A$m)',format:',.0f'}]}});
+// Direct annotations let readers follow the story without relying on hover.
+function annotate(name, apply) {
+ const spec=JSON.parse(fs.readFileSync(path.join(root,`specs/${name}.json`)));
+ apply(spec);
+ save(name,spec);
+}
+annotate('02-participation-map',spec=>{
+ const rows=national.state_participation.filter(r=>r.year===2020).map(r=>({
+  ...r,lon:coords[r.region==='NSW/ACT'?'NSW':r.region][0],lat:coords[r.region==='NSW/ACT'?'NSW':r.region][1],
+  label:`${r.region}\n${r.participation_percent.toFixed(1)}%`
+ }));
+ spec.layer[1]={data:{values:rows},mark:{type:'text',fontSize:11,fontWeight:600,lineBreak:'\n',lineHeight:14,dy:-5},encoding:{
+  longitude:{field:'lon',type:'quantitative'},latitude:{field:'lat',type:'quantitative'},text:{field:'label'},
+  color:{condition:{test:"datum.region === 'NT'",value:'#ffffff'},value:C.ink}
+ }};
+});
+annotate('03-age-slopes',spec=>{
+ spec.layer.push({data:{values:[{label:'Ages 30–44: −6 percentage points'}]},mark:{type:'text',align:'left',baseline:'bottom',fontSize:11,fontWeight:600},encoding:{x:{value:0},y:{value:-10},color:{value:C.copper},text:{field:'label'},tooltip:null}});
+});
+annotate('05-catch-treemap',spec=>{
+ spec.marks[2].encode.update.text={signal:"datum.total >= 1000000 ? format(datum.total/1000000, '.2f')+'m' : format(datum.total/1000, '.0f')+'k'"};
+});
+annotate('06-release-heatmap',spec=>{
+ // RGB interpolation makes the black/white label switch predictable.
+ spec.encoding.color.scale.interpolate='rgb';
+ spec.encoding.color.legend.values=[0,0.25,0.5,0.75,1];
+ spec.layer=[{mark:spec.mark},{mark:{type:'text',fontSize:11},encoding:{text:{field:'release_share',type:'quantitative',format:'.0%'},color:{condition:{test:'datum.release_share >= 0.8',value:'#ffffff'},value:'#000000'}}}];
+ delete spec.mark;
+});
+annotate('08-catch-timeline',spec=>{
+ spec.transform.push({calculate:"datum.total >= 1000000 ? format(datum.total/1000000, '.2f')+'m' : format(datum.total/1000, '.0f')+'k'",as:'catch_label'});
+ spec.layer=[{mark:spec.mark},{mark:{type:'text',dy:-13,fontSize:11,fontWeight:600,color:C.ink},encoding:{text:{field:'catch_label'}}}];
+ delete spec.mark;
+});
+annotate('09-catch-sankey',spec=>{
+ // Stroke bounds overestimate the curved ribbons' extents. Automatic fitting
+ // repeatedly shrank the inner width until source and target columns crossed.
+ // All marks already have explicit, width-relative positions and label gutters.
+ spec.autosize={type:'none',contains:'padding'};
+ spec.data.push({name:'outcomes',source:'nodes',transform:[{type:'filter',expr:"datum.side === 'target'"}]});
+ spec.marks.push({type:'text',from:{data:'outcomes'},encode:{update:{
+  x:{signal:'xRight+17'},y:{signal:'(datum.start+datum.end)/2*unit+datum.rank*50+18'},
+  text:{signal:`[format(datum.value/1000000, '.2f')+'m', format(datum.value/${sum}, '.0%')+' of total']`},
+  align:{value:'left'},baseline:{value:'middle'},lineHeight:{value:14},font:{value:'DM Sans'},fontSize:{value:11},fill:{value:C.ink}
+ }}});
+});
+annotate('11-economic-contribution',spec=>{
+ spec.encoding.y.sort=[...spending].sort((a,b)=>b.gdp_total_aud_million-a.gdp_total_aud_million).map(row=>row.label);
+ spec.layer=[{mark:spec.mark},{mark:{type:'text',align:'right',dx:-7,fontSize:11,fontWeight:600,color:'#ffffff'},encoding:{text:{field:'gdp_total_aud_million',format:',.0f'}}}];
+ delete spec.mark;
+});
 console.log('Generated 11 Vega / Vega-Lite specifications.');

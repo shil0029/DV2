@@ -52,12 +52,6 @@
       "property": "catch"
     }
   },
-  "mark": {
-    "type": "rect",
-    "stroke": "#f6f7f8",
-    "strokeWidth": 3,
-    "cornerRadius": 2
-  },
   "encoding": {
     "x": {
       "field": "year",
@@ -116,12 +110,20 @@
         "range": [
           "#e9eff4",
           "#305c80"
-        ]
+        ],
+        "interpolate": "rgb"
       },
       "title": "Share released",
       "legend": {
         "format": ".0%",
-        "gradientLength": 200
+        "gradientLength": 200,
+        "values": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ]
       }
     },
     "tooltip": [
@@ -149,5 +151,35 @@
         "format": ",.0f"
       }
     ]
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#f6f7f8",
+        "strokeWidth": 3,
+        "cornerRadius": 2
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": {
+          "field": "release_share",
+          "type": "quantitative",
+          "format": ".0%"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.release_share >= 0.8",
+            "value": "#ffffff"
+          },
+          "value": "#000000"
+        }
+      }
+    }
+  ]
 }

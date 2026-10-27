@@ -377,7 +377,7 @@
             "signal": "(datum.y0+datum.y1)/2+12"
           },
           "text": {
-            "signal": "format(datum.total/1000, '.0f')+'k'"
+            "signal": "datum.total >= 1000000 ? format(datum.total/1000000, '.2f')+'m' : format(datum.total/1000, '.0f')+'k'"
           },
           "align": {
             "value": "center"

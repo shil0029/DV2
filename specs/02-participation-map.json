@@ -171,48 +171,84 @@
       "data": {
         "values": [
           {
-            "code": "WA",
-            "lon": 121,
-            "lat": -26
-          },
-          {
-            "code": "NT",
-            "lon": 133,
-            "lat": -20
-          },
-          {
-            "code": "SA",
-            "lon": 135,
-            "lat": -30
-          },
-          {
-            "code": "QLD",
-            "lon": 145,
-            "lat": -23
-          },
-          {
-            "code": "NSW/ACT",
-            "lon": 147,
-            "lat": -33
-          },
-          {
-            "code": "VIC",
+            "region": "VIC",
+            "name": "Victoria",
+            "year": 2020,
+            "participation_percent": 19,
+            "source_ref": "state-participation",
             "lon": 144,
-            "lat": -37
+            "lat": -37,
+            "label": "VIC\n19.0%"
           },
           {
-            "code": "TAS",
+            "region": "NSW/ACT",
+            "name": "New South Wales and ACT",
+            "year": 2020,
+            "participation_percent": 20.1,
+            "source_ref": "state-participation",
             "lon": 147,
-            "lat": -42
+            "lat": -33,
+            "label": "NSW/ACT\n20.1%"
+          },
+          {
+            "region": "SA",
+            "name": "South Australia",
+            "year": 2020,
+            "participation_percent": 21.3,
+            "source_ref": "state-participation",
+            "lon": 135,
+            "lat": -30,
+            "label": "SA\n21.3%"
+          },
+          {
+            "region": "TAS",
+            "name": "Tasmania",
+            "year": 2020,
+            "participation_percent": 21.4,
+            "source_ref": "state-participation",
+            "lon": 147,
+            "lat": -42,
+            "label": "TAS\n21.4%"
+          },
+          {
+            "region": "QLD",
+            "name": "Queensland",
+            "year": 2020,
+            "participation_percent": 22.9,
+            "source_ref": "state-participation",
+            "lon": 145,
+            "lat": -23,
+            "label": "QLD\n22.9%"
+          },
+          {
+            "region": "WA",
+            "name": "Western Australia",
+            "year": 2020,
+            "participation_percent": 24.4,
+            "source_ref": "state-participation",
+            "lon": 121,
+            "lat": -26,
+            "label": "WA\n24.4%"
+          },
+          {
+            "region": "NT",
+            "name": "Northern Territory",
+            "year": 2020,
+            "participation_percent": 35.1,
+            "source_ref": "state-participation",
+            "lon": 133,
+            "lat": -20,
+            "label": "NT\n35.1%"
           }
         ]
       },
       "mark": {
         "type": "text",
-        "font": "DM Sans",
         "fontSize": 11,
         "fontWeight": 600,
-        "color": "#21374b"
+        "lineBreak": "\n",
+        "lineHeight": 14,
+        "dy": -5
       },
       "encoding": {
         "longitude": {
@@ -224,11 +260,11 @@
           "type": "quantitative"
         },
         "text": {
-          "field": "code"
+          "field": "label"
         },
         "color": {
           "condition": {
-            "test": "datum.code === 'NT'",
+            "test": "datum.region === 'NT'",
             "value": "#ffffff"
           },
           "value": "#21374b"

@@ -55,11 +55,19 @@
     for (const name of species) speciesSelect.add(new Option(name, name));
     speciesSelect.value = 'Snapper';
     await Promise.all([...document.querySelectorAll('[data-spec]')].map(render));
+    const updateCatchSummary = () => {
+      const rows = nsw.catch.filter(row => row.species === speciesSelect.value).sort((a,b) => a.year.localeCompare(b.year));
+      const first = rows[0], last = rows[rows.length - 1];
+      const change = (last.total / first.total - 1) * 100;
+      document.getElementById('catch-summary').textContent = `${speciesSelect.value}: an estimated ${last.total.toLocaleString('en-AU')} catches in 2023–24, compared with ${first.total.toLocaleString('en-AU')} in 2017–18. The later estimate is ${Math.abs(change).toFixed(0)}% ${change < 0 ? 'lower' : 'higher'}.`;
+      document.getElementById('chart-08').setAttribute('aria-label', `Estimated ${speciesSelect.value} catch over four NSW surveys from 2017–18 to 2023–24. ${document.getElementById('catch-summary').textContent}`);
+    };
+    updateCatchSummary();
     speciesSelect.addEventListener('change', async () => {
       try {
         const view = views.get('08-catch-timeline');
         if (view) await view.signal('species', speciesSelect.value).runAsync();
-        document.getElementById('chart-08').setAttribute('aria-label', `Estimated ${speciesSelect.value} catch over four NSW surveys from 2017–18 to 2023–24.`);
+        updateCatchSummary();
       } catch (error) { report(error); }
     });
     const originSelect = document.getElementById('origin-select');
@@ -70,6 +78,7 @@
       const total = rows.reduce((sum, row) => sum + row.fte_jobs, 0);
       document.getElementById('flow-heading').textContent = `${name}’s spending reaches beyond ${name}.`;
       document.getElementById('flow-summary').textContent = `In the 2018–19 model, spending by these residents supported about ${total.toLocaleString('en-AU')} full-time equivalent jobs in other states and territories. ${top.destination} received the largest interstate contribution: ${top.fte_jobs.toLocaleString('en-AU')} FTE jobs.`;
+      document.getElementById('chart-10').setAttribute('aria-label', `Employment supported outside ${name} by recreational fishing spending from its residents. ${document.getElementById('flow-summary').textContent}`);
     };
     updateSummary();
     originSelect.addEventListener('change', async () => {

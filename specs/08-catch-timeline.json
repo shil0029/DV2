@@ -55,18 +55,12 @@
   "transform": [
     {
       "filter": "datum.species === species"
+    },
+    {
+      "calculate": "datum.total >= 1000000 ? format(datum.total/1000000, '.2f')+'m' : format(datum.total/1000, '.0f')+'k'",
+      "as": "catch_label"
     }
   ],
-  "mark": {
-    "type": "line",
-    "color": "#386f98",
-    "strokeWidth": 3,
-    "point": {
-      "filled": true,
-      "size": 75,
-      "color": "#386f98"
-    }
-  },
   "encoding": {
     "x": {
       "field": "year",
@@ -119,5 +113,33 @@
         "format": ",.0f"
       }
     ]
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#386f98",
+        "strokeWidth": 3,
+        "point": {
+          "filled": true,
+          "size": 75,
+          "color": "#386f98"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -13,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#21374b"
+      },
+      "encoding": {
+        "text": {
+          "field": "catch_label"
+        }
+      }
+    }
+  ]
 }

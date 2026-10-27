@@ -218,6 +218,37 @@
           "field": "label"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "Ages 30–44: −6 percentage points"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": -10
+        },
+        "color": {
+          "value": "#ad5738"
+        },
+        "text": {
+          "field": "label"
+        },
+        "tooltip": null
+      }
     }
   ]
 }

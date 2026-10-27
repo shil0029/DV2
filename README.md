@@ -13,6 +13,7 @@ From this directory, run `python3 -m http.server 8000 --bind 127.0.0.1`, then vi
 - `data/`: compact source extracts, map geometry and provenance.
 - `scripts/`: reproducible data preparation and chart specification generation.
 - `vendor/`, `fonts/`: local, pinned dependencies and font licences.
+- `submission/`: the supplied hand-drawn sketch PDF and full-page website screenshot.
 
 ## Data scope
 
@@ -60,7 +61,7 @@ Reviewed in the order of the supplied brief, pages 5–6. This records the evide
 
 | Rubric section | Review and resulting changes |
 | --- | --- |
-| Sketch — 2% | Excluded at the owner's request. There is no hand-drawn sketch submission to assess. |
+| Sketch — 2% | The supplied hand-drawn sketch is now included as a photographed original in `submission/sketch.pdf`. It shows the introduction, national participation, NSW catches and economic contribution, including the three map types. The final page preserves this sequence, with clearer captions and more room for the Sankey and economic section. |
 | Idioms and complexity — 8% | 11 distinct charts, including choropleth, proportional-symbol and flow maps. Nine named idioms fall outside the rubric's basic-idiom list; the line and ranked bar are basic. Preserved appropriate rate, area, position and width encodings. Clarified NSW/ACT, added an ACT callout, improved the flow-width legend, and added redundant marker shapes. |
 | Layout, colour, figure-ground — 3% | Retained aligned columns and the continuous story. Replaced cream/teal with cool white, slate blue and muted copper. Darkened treemap fills for readable white labels, used a light label on the darkest map region, and removed the hero panel's rotation. |
 | Typography — 2% | Uses locally licensed Source Sans 3 across headings, body copy and charts, with weight and size establishing hierarchy. Increased captions, source notes and introductory text; limited long reading lines. Treemap labels have more than 4.5:1 contrast against their fills. |
@@ -68,7 +69,14 @@ Reviewed in the order of the supplied brief, pages 5–6. This records the evide
 | Description of domain, who, what, why, how — 2% | Expanded the rationale above with audience, purpose, source methods, population limits, mark/channel choices and interaction rationale. |
 | Interview — 3% | Excluded at the owner's request. It is not something the website can complete. |
 
-The additional brief requirements remain in place: one public scrolling GitHub page, readable chart JSON in the same repository, two research sources, three map idioms, small local datasets, attribution and meaningful interaction. The hand-drawn sketch and interview exclusions remain separate from the website improvements.
+The additional brief requirements remain in place: one public scrolling GitHub page, readable chart JSON in the same repository, two research sources, three map idioms, small local datasets, attribution and meaningful interaction. The sketch was supplied for the assignment document on 27 October 2026. This repository does not establish interview attendance or tutor feedback.
+
+## Assignment submission assets
+
+- [Original hand-drawn sketch as a PDF](https://shil0029.github.io/DV2/submission/sketch.pdf)
+- [Full-page screenshot of the published visualisation](https://shil0029.github.io/DV2/submission/visualisation-full.png), captured on 27 October 2026 at a 1280px browser width.
+
+The sketch photograph is preserved without redrawing its contents. The screenshot records all 11 charts with the default Snapper and Victoria selections. These are supporting files and are not downloaded by the visualisation itself.
 
 ## Check and regenerate
 
@@ -92,4 +100,4 @@ Typeface: [Source Sans 3](https://github.com/google/fonts/tree/main/ofl/sourcesa
 
 Author: Sean Hilder. Created 26 October 2026. Developed with assistance from OpenAI Codex for research, data transcription, code, chart design, wording and verification. This acknowledgement should also accompany any assessment submission. No third-party charts have been copied into the page.
 
-The hand-drawn sketch and interview are outside this repository's deliverables, as requested. The page and repository do not establish completion of those assessment components.
+The hand-drawn sketch is included above. Interview completion remains separate from the website and submission files.

@@ -16,19 +16,19 @@
       "labelFontSize": 12,
       "titleFontSize": 12,
       "titleFontWeight": 500,
-      "labelColor": "#697d7c",
-      "titleColor": "#173e45",
+      "labelColor": "#536371",
+      "titleColor": "#21374b",
       "domain": false,
       "ticks": false,
-      "gridColor": "#dce2d9",
+      "gridColor": "#d7e0e6",
       "labelPadding": 8,
       "titlePadding": 14
     },
     "legend": {
       "labelFontSize": 12,
       "titleFontSize": 12,
-      "labelColor": "#173e45",
-      "titleColor": "#173e45",
+      "labelColor": "#21374b",
+      "titleColor": "#21374b",
       "orient": "bottom",
       "titleFontWeight": 500,
       "padding": 12
@@ -131,7 +131,7 @@
       ],
       "mark": {
         "type": "geoshape",
-        "stroke": "#faf9f2",
+        "stroke": "#f6f7f8",
         "strokeWidth": 1.5
       },
       "encoding": {
@@ -145,8 +145,8 @@
               36
             ],
             "range": [
-              "#dce6bd",
-              "#087980"
+              "#e1ebf2",
+              "#305c80"
             ]
           },
           "legend": {
@@ -212,7 +212,7 @@
         "font": "DM Sans",
         "fontSize": 11,
         "fontWeight": 600,
-        "color": "#173e45"
+        "color": "#21374b"
       },
       "encoding": {
         "longitude": {
@@ -225,6 +225,13 @@
         },
         "text": {
           "field": "code"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.code === 'NT'",
+            "value": "#ffffff"
+          },
+          "value": "#21374b"
         }
       }
     }

@@ -42,7 +42,7 @@
           "start": 151863.5,
           "end": 151863.5,
           "rank": 0,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Bream",
@@ -51,7 +51,7 @@
           "start": 784493.5,
           "end": 1583314.5,
           "rank": 0,
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Dusky Flathead",
@@ -60,7 +60,7 @@
           "start": 1430914.5,
           "end": 469381.5,
           "rank": 1,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Dusky Flathead",
@@ -69,7 +69,7 @@
           "start": 1877368.5,
           "end": 2344880.5,
           "rank": 1,
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Snapper",
@@ -78,7 +78,7 @@
           "start": 2241411,
           "end": 718279,
           "rank": 2,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Snapper",
@@ -87,7 +87,7 @@
           "start": 2500154,
           "end": 2801180,
           "rank": 2,
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Murray Cod",
@@ -96,7 +96,7 @@
           "start": 2698566.5,
           "end": 824434.5,
           "rank": 3,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Murray Cod",
@@ -105,7 +105,7 @@
           "start": 2861295,
           "end": 3116496,
           "rank": 3,
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Tailor",
@@ -114,7 +114,7 @@
           "start": 3071679.5,
           "end": 917915.5,
           "rank": 4,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Tailor",
@@ -123,7 +123,7 @@
           "start": 3231792,
           "end": 3345856,
           "rank": 4,
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Sand Whiting",
@@ -132,7 +132,7 @@
           "start": 3378368,
           "end": 1045516,
           "rank": 5,
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Sand Whiting",
@@ -141,7 +141,7 @@
           "start": 3527108.5,
           "end": 3527108.5,
           "rank": 5,
-          "colour": "#147a80"
+          "colour": "#386f98"
         }
       ]
     },
@@ -269,7 +269,7 @@
             "signal": "(datum.end-datum.start)*unit"
           },
           "fill": {
-            "signal": "datum.side==='source'?'#173e45':datum.name==='Kept'?'#c86a45':'#147a80'"
+            "signal": "datum.side==='source'?'#21374b':datum.name==='Kept'?'#ad5738':'#386f98'"
           }
         }
       }
@@ -306,7 +306,7 @@
             "value": 500
           },
           "fill": {
-            "value": "#173e45"
+            "value": "#21374b"
           },
           "limit": {
             "signal": "datum.side==='source'?xLeft-12:85"

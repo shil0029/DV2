@@ -26,7 +26,7 @@
           "release_share": 0.7599489433001912,
           "id": "Bream",
           "parent": "root",
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Dusky Flathead",
@@ -37,7 +37,7 @@
           "release_share": 0.6289550547200832,
           "id": "Dusky Flathead",
           "parent": "root",
-          "colour": "#4c7097"
+          "colour": "#725a7a"
         },
         {
           "species": "Snapper",
@@ -48,7 +48,7 @@
           "release_share": 0.6782792191479576,
           "id": "Snapper",
           "parent": "root",
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Murray Cod",
@@ -59,7 +59,7 @@
           "release_share": 0.8591979892889076,
           "id": "Murray Cod",
           "parent": "root",
-          "colour": "#c99c42"
+          "colour": "#856720"
         },
         {
           "species": "Tailor",
@@ -70,7 +70,7 @@
           "release_share": 0.5592550261377902,
           "id": "Tailor",
           "parent": "root",
-          "colour": "#4a9092"
+          "colour": "#486e78"
         },
         {
           "species": "Sand Whiting",
@@ -81,7 +81,7 @@
           "release_share": 0.6165691811214199,
           "id": "Sand Whiting",
           "parent": "root",
-          "colour": "#71866c"
+          "colour": "#5b6d48"
         },
         {
           "species": "Sand Flathead",
@@ -92,7 +92,7 @@
           "release_share": 0.5057046880549307,
           "id": "Sand Flathead",
           "parent": "root",
-          "colour": "#8e7887"
+          "colour": "#8a5369"
         },
         {
           "species": "Luderick",
@@ -103,7 +103,7 @@
           "release_share": 0.35275860492754946,
           "id": "Luderick",
           "parent": "root",
-          "colour": "#91a7b4"
+          "colour": "#536477"
         },
         {
           "species": "Yellowtail Kingfish",
@@ -114,7 +114,7 @@
           "release_share": 0.6371829486253184,
           "id": "Yellowtail Kingfish",
           "parent": "root",
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Rainbow Trout",
@@ -125,7 +125,7 @@
           "release_share": 0.8178216456055114,
           "id": "Rainbow Trout",
           "parent": "root",
-          "colour": "#4c7097"
+          "colour": "#725a7a"
         },
         {
           "species": "Australian Bass",
@@ -136,7 +136,7 @@
           "release_share": 0.9341507543931852,
           "id": "Australian Bass",
           "parent": "root",
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Yabbies",
@@ -147,7 +147,7 @@
           "release_share": 0.17237384037901454,
           "id": "Yabbies",
           "parent": "root",
-          "colour": "#c99c42"
+          "colour": "#856720"
         },
         {
           "species": "Blue Swimmer Crab",
@@ -158,7 +158,7 @@
           "release_share": 0.21285273368606702,
           "id": "Blue Swimmer Crab",
           "parent": "root",
-          "colour": "#4a9092"
+          "colour": "#486e78"
         },
         {
           "species": "Brown Trout",
@@ -169,7 +169,7 @@
           "release_share": 0.7715440278169345,
           "id": "Brown Trout",
           "parent": "root",
-          "colour": "#71866c"
+          "colour": "#5b6d48"
         },
         {
           "species": "Golden Perch",
@@ -180,7 +180,7 @@
           "release_share": 0.6466625339581016,
           "id": "Golden Perch",
           "parent": "root",
-          "colour": "#8e7887"
+          "colour": "#8a5369"
         },
         {
           "species": "Australian Salmon",
@@ -191,7 +191,7 @@
           "release_share": 0.5992827591540038,
           "id": "Australian Salmon",
           "parent": "root",
-          "colour": "#91a7b4"
+          "colour": "#536477"
         },
         {
           "species": "Mulloway",
@@ -202,7 +202,7 @@
           "release_share": 0.7587803320561941,
           "id": "Mulloway",
           "parent": "root",
-          "colour": "#147a80"
+          "colour": "#386f98"
         },
         {
           "species": "Leatherjacket",
@@ -213,7 +213,7 @@
           "release_share": 0.2886045525236816,
           "id": "Leatherjacket",
           "parent": "root",
-          "colour": "#4c7097"
+          "colour": "#725a7a"
         },
         {
           "species": "Silver Trevally",
@@ -224,7 +224,7 @@
           "release_share": 0.6389837957384068,
           "id": "Silver Trevally",
           "parent": "root",
-          "colour": "#c86a45"
+          "colour": "#ad5738"
         },
         {
           "species": "Grey Morwong",
@@ -235,7 +235,7 @@
           "release_share": 0.3693177026229232,
           "id": "Grey Morwong",
           "parent": "root",
-          "colour": "#c99c42"
+          "colour": "#856720"
         }
       ],
       "transform": [
@@ -299,7 +299,7 @@
             "field": "colour"
           },
           "stroke": {
-            "value": "#faf9f2"
+            "value": "#f6f7f8"
           },
           "strokeWidth": {
             "value": 1
@@ -311,8 +311,11 @@
           }
         },
         "hover": {
-          "opacity": {
-            "value": 0.75
+          "stroke": {
+            "value": "#21374b"
+          },
+          "strokeWidth": {
+            "value": 2
           }
         }
       }
@@ -349,7 +352,7 @@
             "value": 12
           },
           "fill": {
-            "value": "#fffef7"
+            "value": "#ffffff"
           },
           "limit": {
             "signal": "datum.x1-datum.x0-12"
@@ -389,7 +392,7 @@
             "value": 12
           },
           "fill": {
-            "value": "#fffef7"
+            "value": "#ffffff"
           },
           "opacity": {
             "signal": "datum.x1-datum.x0>70 && datum.y1-datum.y0>45 ? 1 : 0"

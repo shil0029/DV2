@@ -16,19 +16,19 @@
       "labelFontSize": 12,
       "titleFontSize": 12,
       "titleFontWeight": 500,
-      "labelColor": "#697d7c",
-      "titleColor": "#173e45",
+      "labelColor": "#536371",
+      "titleColor": "#21374b",
       "domain": false,
       "ticks": false,
-      "gridColor": "#dce2d9",
+      "gridColor": "#d7e0e6",
       "labelPadding": 8,
       "titlePadding": 14
     },
     "legend": {
       "labelFontSize": 12,
       "titleFontSize": 12,
-      "labelColor": "#173e45",
-      "titleColor": "#173e45",
+      "labelColor": "#21374b",
+      "titleColor": "#21374b",
       "orient": "bottom",
       "titleFontWeight": 500,
       "padding": 12
@@ -105,7 +105,7 @@
   },
   "mark": {
     "type": "bar",
-    "color": "#147a80",
+    "color": "#386f98",
     "cornerRadiusEnd": 3,
     "height": 26
   },

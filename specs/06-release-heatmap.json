@@ -16,19 +16,19 @@
       "labelFontSize": 12,
       "titleFontSize": 12,
       "titleFontWeight": 500,
-      "labelColor": "#697d7c",
-      "titleColor": "#173e45",
+      "labelColor": "#536371",
+      "titleColor": "#21374b",
       "domain": false,
       "ticks": false,
-      "gridColor": "#dce2d9",
+      "gridColor": "#d7e0e6",
       "labelPadding": 8,
       "titlePadding": 14
     },
     "legend": {
       "labelFontSize": 12,
       "titleFontSize": 12,
-      "labelColor": "#173e45",
-      "titleColor": "#173e45",
+      "labelColor": "#21374b",
+      "titleColor": "#21374b",
       "orient": "bottom",
       "titleFontWeight": 500,
       "padding": 12
@@ -54,7 +54,7 @@
   },
   "mark": {
     "type": "rect",
-    "stroke": "#faf9f2",
+    "stroke": "#f6f7f8",
     "strokeWidth": 3,
     "cornerRadius": 2
   },
@@ -114,8 +114,8 @@
           1
         ],
         "range": [
-          "#f1e4c5",
-          "#0b787e"
+          "#e9eff4",
+          "#305c80"
         ]
       },
       "title": "Share released",

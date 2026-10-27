@@ -56,12 +56,12 @@
       "pdf_page": 58,
       "printed_page": 44,
       "figure": "Figure 4.2 as printed; referred to as Figure 4.8 in surrounding prose",
-      "extraction": "Transcribed printed numeric labels after rendering;2018 values also confirmed in prose on printedp 43.",
+      "extraction": "Transcribed printed numeric labels after rendering; 2018 values also confirmed in prose on printed p 43.",
       "definition": "Percentage within each adult age or gender category who fished in the preceding 12 months.",
       "notes": [
         "Gender categories are reproduced as reported; no claim that survey categories describe all identities.",
         "The 30–44 age group fell from 26.6% to 20.6%. Report describes 18–29 increase and 45–64 decrease as not statistically significant.",
-        "Observed differences do not establish thatCOVID-19 caused the changes."
+        "Observed differences do not establish that COVID-19 caused the changes."
       ]
     },
     {
@@ -73,7 +73,7 @@
       "definition": "Estimated share of adults undertaking each activity once or more in a typical 2–3-year period, based on 2018 survey.",
       "notes": [
         "This is NOT annual participation.",
-        "The report reinterprets answers as a typical 2–3-year period after participant follow-up; see printedp 42 footnote 7.",
+        "The report reinterprets answers as a typical 2–3-year period after participant follow-up; see printed p 42 footnote 7.",
         "Multiple activities can be selected, so percentages must not be added.",
         "Use chart subtitle to distinguish fishing 30.8% here from annual 20.0% in 2020."
       ]
@@ -90,7 +90,7 @@
         "Includes interregional business supply-chain and household spending effects.",
         "Includes ACT as a separate economic region even though participation combines NSW/ACT.",
         "Within-state flows are excluded.",
-        "Source Sydney→Sydney cell literally reads 9 Ti 649, so it is stored asnull in the transcription. It does not enter any interstate aggregate. No value was inferred.",
+        "Source Sydney→Sydney cell literally reads 9 Ti 649, so it is stored as null in the transcription. It does not enter any interstate aggregate. No value was inferred.",
         "Published matrix values are rounded to whole FTE; aggregated totals inherit rounding.",
         "A map can use an origin-state selector to avoid overlapping bilateral lines."
       ]
@@ -101,7 +101,7 @@
       "printed_page": 130,
       "table": "Table 7.9",
       "extraction": "Transcribed table values.",
-      "definition": "Modelled economic contribution by expenditure category,2018–19. GDP figures areAUDmillions; employment is full-time-equivalent jobs.",
+      "definition": "Modelled economic contribution by expenditure category, 2018–19. GDP figures are AUD millions; employment is full-time-equivalent jobs.",
       "notes": [
         "GDP contribution is not the amount fishers spent.",
         "Flow-on comprises production- and consumption-induced effects.",

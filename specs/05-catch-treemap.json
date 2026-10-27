@@ -283,18 +283,6 @@
       },
       "encode": {
         "enter": {
-          "x": {
-            "field": "x0"
-          },
-          "x2": {
-            "field": "x1"
-          },
-          "y": {
-            "field": "y0"
-          },
-          "y2": {
-            "field": "y1"
-          },
           "fill": {
             "field": "colour"
           },
@@ -308,6 +296,18 @@
         "update": {
           "tooltip": {
             "signal": "{Species:datum.species, 'Estimated catches':format(datum.total, ','), 'Year':'2023/24'}"
+          },
+          "x": {
+            "field": "x0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "y2": {
+            "field": "y1"
           }
         },
         "hover": {
@@ -361,7 +361,8 @@
             "signal": "datum.x1-datum.x0>70 && datum.y1-datum.y0>35 ? 1 : 0"
           }
         }
-      }
+      },
+      "interactive": false
     },
     {
       "type": "text",
@@ -398,7 +399,8 @@
             "signal": "datum.x1-datum.x0>70 && datum.y1-datum.y0>45 ? 1 : 0"
           }
         }
-      }
+      },
+      "interactive": false
     }
   ]
 }

@@ -95,6 +95,13 @@ annotate('03-age-slopes',spec=>{
  spec.layer.push({data:{values:[{label:'Ages 30–44: −6 percentage points'}]},mark:{type:'text',align:'left',baseline:'bottom',fontSize:11,fontWeight:600},encoding:{x:{value:0},y:{value:-10},color:{value:C.copper},text:{field:'label'},tooltip:null}});
 });
 annotate('05-catch-treemap',spec=>{
+ // Layout coordinates must update when a reader resizes the page.
+ for(const key of ['x','x2','y','y2']){
+  spec.marks[0].encode.update[key]=spec.marks[0].encode.enter[key];
+  delete spec.marks[0].encode.enter[key];
+ }
+ spec.marks[1].interactive=false;
+ spec.marks[2].interactive=false;
  spec.marks[2].encode.update.text={signal:"datum.total >= 1000000 ? format(datum.total/1000000, '.2f')+'m' : format(datum.total/1000, '.0f')+'k'"};
 });
 annotate('06-release-heatmap',spec=>{

@@ -1,11 +1,12 @@
 /* Embed the standalone JSON files and connect the two useful page controls. */
 (() => {
   'use strict';
+  const assetVersion = '20261027';
   const views = new Map();
   const errors = [];
   window.fishingPage = { views, errors, ready: false };
   const fetchJSON = async path => {
-    const response = await fetch(path);
+    const response = await fetch(`${path}?v=${assetVersion}`);
     if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
     return response.json();
   };

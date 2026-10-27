@@ -39,7 +39,7 @@ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert.equal((html.match(/data-spec=/g)||[]).length,11);
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   const target=match[1];
-  if(!/^(https?:|data:)/.test(target))assert.ok(fs.existsSync(path.join(root,target)),`Missing local asset: ${target}`);
+  if(!/^(https?:|data:)/.test(target))assert.ok(fs.existsSync(path.join(root,target.split(/[?#]/)[0])),`Missing local asset: ${target}`);
 }
 const dataBytes=fs.readdirSync(path.join(root,'data')).reduce((sum,name)=>sum+fs.statSync(path.join(root,'data',name)).size,0);
 assert.ok(dataBytes<2_000_000,`Data payload exceeds 2 MB: ${dataBytes}`);

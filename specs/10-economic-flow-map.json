@@ -1402,6 +1402,7 @@
           "legend": {
             "title": "FTE jobs supported",
             "symbolType": "stroke",
+            "symbolSize": 600,
             "orient": "bottom",
             "values": [
               100,
@@ -2809,9 +2810,10 @@
       ],
       "mark": {
         "type": "point",
+        "shape": "diamond",
         "filled": true,
         "color": "#c86a45",
-        "size": 160,
+        "size": 180,
         "stroke": "#fffef7",
         "strokeWidth": 2
       },
@@ -2879,6 +2881,71 @@
         "fontWeight": 600,
         "color": "#173e45",
         "dy": -14
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "code"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.13,
+            "lat": -35.28,
+            "lon2": 155,
+            "lat2": -36.4
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#697d7c",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "code": "ACT",
+            "lon": 155,
+            "lat": -36.4
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#173e45"
       },
       "encoding": {
         "longitude": {

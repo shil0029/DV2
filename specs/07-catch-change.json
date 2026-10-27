@@ -196,6 +196,24 @@
             "title": null,
             "labelExpr": "datum.label === 'before' ? '2021/22' : '2023/24'"
           }
+        },
+        "shape": {
+          "field": "survey",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "before",
+              "after"
+            ],
+            "range": [
+              "circle",
+              "diamond"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "labelExpr": "datum.label === 'before' ? '2021/22' : '2023/24'"
+          }
         }
       }
     }

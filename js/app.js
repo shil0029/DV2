@@ -1,7 +1,7 @@
 /* Embed the standalone JSON files and connect the two useful page controls. */
 (() => {
   'use strict';
-  const assetVersion = '20261027';
+  const assetVersion = '20261027b';
   const views = new Map();
   const errors = [];
   window.fishingPage = { views, errors, ready: false };
